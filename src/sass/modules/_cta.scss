@@ -1,0 +1,31 @@
+a {
+	width: 50%;
+	max-width: 300px;
+	font-size: 14px;
+	display:block;
+	padding: 15px 30px;
+	color:#000;
+	background: #fff;
+	text-decoration: none;
+	text-transform:uppercase;
+	letter-spacing: 1px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+.cta {
+  margin: 50px auto 0;
+}
+.anchor {
+  visibility:hidden;
+  padding-top:100px;
+  margin: 0;    
+}
+a:hover {
+	color: #fff;
+	background: #4BDBE7;	
+}
+.contact__cta {
+  display: inline-block;
+  margin: 15px;
+}
+

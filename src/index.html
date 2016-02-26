@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>Niko Matses - Cinematographer / Editor</title>
+<script src="https://use.typekit.net/qbp5vqk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>   
+<link href="stylesheets/pres/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="stylesheets/pres/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+  <link href="stylesheets/pres/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="stylesheets/index.css" rel="stylesheet" type="text/css">    
+</head>
+<body> 
+
+<header class="header">
+  <section class="header__intro">
+    <article>
+        <h2 id="header__name" class="tk-rinse">Niko Matses</h2>
+        <h1 id="header__title" class="tk-rinse">Cinematographer / Editor</h1>
+        <a class="cta" href="#showreel" target="_top">Show Reel</a>
+    </article>
+  </section>
+</header>
+    
+<main id="main">
+  <section id="showreel" name="showreel">
+	<div class='embed-container'><iframe src='https://player.vimeo.com/video/131066298?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+	<a class="cta" href="#contact" target="_top">Contact</a>
+  </section>
+</main>
+    
+<footer class="footer">
+  <section id="contact" name="contact">
+	<a class="contact__cta" href="tel:9782890008" target="_top">Call</a>
+	<a class="contact__cta" href="mailto:gigs@nikomatses.com">Email</a>
+    <span class="copyright">&copy;2016 Niko Matses /  978.289.0008 / gigs@nikomatses.com</span>
+  </section>
+    <ul class="social">
+      <li class="social__icon"><a class="icon-facebook" target="_blank" href="https://www.facebook.com/niko.matses">
+          <img src="img/icons/icon-facebook.svg">
+      </a></li>
+      <li class="social__icon"><a class="icon-twitter" target="_blank" href="https://twitter.com/Nik0media">
+          <img src="img/icons/icon-twitter.svg">
+      </a></li>
+      <li class="social__icon"><a class="icon-vimeo" target="_blank" href="https://vimeo.com/nikomedia">
+          <img src="img/icons/icon-vimeo.svg">
+      </a></li>   
+      <li class="social__icon"><a class="icon-youtube" target="_blank" href="https://www.youtube.com/channel/UCASgBK81dWMQEzc10iE9eyA">
+          <img src="img/icons/icon-youtube.svg">
+      </a></li> 
+      <li class="social__icon"><a class="icon-instagram" target="_blank" href="https://www.instagram.com/nik0media">
+          <img src="img/icons/icon-instagram.svg">
+      </a></li>   
+    </ul>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    var $root = $('html, body');
+    $('a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+</script>
+</html>

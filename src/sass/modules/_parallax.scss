@@ -1,0 +1,13 @@
+#bubbles1, #bubbles2{
+width: 20%;
+height: 50%;
+top: 0;
+left: 0;
+position: fixed;
+z-index: -1;
+background: red 5% 50% no-repeat;
+}
+
+#bubbles2{
+background: blue 95% 90% no-repeat;
+}

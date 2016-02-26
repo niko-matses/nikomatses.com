@@ -1,0 +1,23 @@
+html {
+	height: 100%;
+	background: #0f2938; /* Old browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2938', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, #0f2938 0%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0f2938 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0f2938 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #000 url(../img/lumix-gh-cinema-rig-shallow-depth-of-field.jpg);
+	background-repeat:no-repeat;
+	background-position: 50% 0;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+body {
+  height: 100%;
+	 -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+
+}

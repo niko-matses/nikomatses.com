@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Coda);
+
+h1, h2 {
+    @include smoothText;
+	font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a, footer {
+	font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, a, footer {
+	text-align:center;
+	margin:auto;
+}
+h1 {
+	color: #fff;
+	font-size: 3em;
+	margin-bottom: 30px;
+    @media (max-width:767px) {
+      font-size: 2em;
+    }
+}
+h2 {
+    width: 66%;
+	max-width:360px;	
+	color: #fff;
+	font-size: 1.75em;
+	letter-spacing: 1px;
+	text-transform:uppercase;
+	border-bottom: 1px solid;
+	margin-bottom: 15px;
+}
