@@ -1,4 +1,4 @@
-a {
+.cta {
 	width: 50%;
 	max-width: 300px;
 	font-size: 14px;
@@ -11,18 +11,16 @@ a {
 	letter-spacing: 1px;
     transition: background-color 0.3s ease,
                 color 0.3s ease;
-}
-.cta {
-  margin: 50px auto 0;
+    margin: 50px auto 0;
 }
 .anchor {
   visibility:hidden;
   padding-top:100px;
   margin: 0;    
 }
-a:hover {
+.cta:hover {
 	color: #fff;
-	background: #4BDBE7;	
+	background: $blue;	
 }
 .contact__cta {
   display: inline-block;

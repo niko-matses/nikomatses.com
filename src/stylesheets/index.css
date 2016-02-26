@@ -90,38 +90,43 @@ body {
   animation: fadein 3s;
 }
 
-/* line 3, ../sass/theme/_typography.scss */
-h1, h2 {
+/* line 2, ../sass/theme/_typography.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 5, ../sass/theme/_typography.scss */
+h1, h2, p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 7, ../sass/theme/_typography.scss */
+/* line 9, ../sass/theme/_typography.scss */
 a, footer {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 11, ../sass/theme/_typography.scss */
+/* line 13, ../sass/theme/_typography.scss */
 h1, h2, a, footer {
   text-align: center;
   margin: auto;
 }
 
-/* line 15, ../sass/theme/_typography.scss */
+/* line 17, ../sass/theme/_typography.scss */
 h1 {
   color: #fff;
   font-size: 3em;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  /* line 15, ../sass/theme/_typography.scss */
+  /* line 17, ../sass/theme/_typography.scss */
   h1 {
     font-size: 2em;
   }
 }
 
-/* line 23, ../sass/theme/_typography.scss */
+/* line 25, ../sass/theme/_typography.scss */
 h2 {
   width: 66%;
   max-width: 360px;
@@ -131,6 +136,20 @@ h2 {
   text-transform: uppercase;
   border-bottom: 1px solid;
   margin-bottom: 15px;
+  padding: 0 0 15px;
+}
+
+/* line 36, ../sass/theme/_typography.scss */
+a {
+  text-decoration: none;
+  color: #4BDBE7;
+}
+
+/* line 40, ../sass/theme/_typography.scss */
+p {
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 
 /* line 1, ../sass/theme/_header.scss */
@@ -145,10 +164,6 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-/* line 11, ../sass/theme/_header.scss */
-.header .header__intro #header__name {
-  padding: 0 0 15px;
-}
 
 /* line 1, ../sass/theme/_main.scss */
 #main {
@@ -160,6 +175,25 @@ h2 {
 /* line 7, ../sass/theme/_main.scss */
 #showreel {
   padding: 20% 0;
+}
+
+/* line 11, ../sass/theme/_main.scss */
+#about {
+  margin: 80% auto 100%;
+  padding-top: 20%;
+}
+
+/* line 16, ../sass/theme/_main.scss */
+.about__me {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px;
+}
+
+/* line 20, ../sass/theme/_main.scss */
+.about__intro {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 30px;
 }
 
 /* line 1, ../sass/theme/_footer.scss */
@@ -203,7 +237,7 @@ h2 {
 }
 
 /* line 1, ../sass/modules/_cta.scss */
-a {
+.cta {
   width: 50%;
   max-width: 300px;
   font-size: 14px;
@@ -215,27 +249,23 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* line 15, ../sass/modules/_cta.scss */
-.cta {
   margin: 50px auto 0;
 }
 
-/* line 18, ../sass/modules/_cta.scss */
+/* line 16, ../sass/modules/_cta.scss */
 .anchor {
   visibility: hidden;
   padding-top: 100px;
   margin: 0;
 }
 
-/* line 23, ../sass/modules/_cta.scss */
-a:hover {
+/* line 21, ../sass/modules/_cta.scss */
+.cta:hover {
   color: #fff;
   background: #4BDBE7;
 }
 
-/* line 27, ../sass/modules/_cta.scss */
+/* line 25, ../sass/modules/_cta.scss */
 .contact__cta {
   display: inline-block;
   margin: 15px;
