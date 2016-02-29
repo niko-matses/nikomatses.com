@@ -16,29 +16,25 @@
   width: 100%;
 }
 
-.about__portait, .about__portrait-byline, .about__me {
-    width: auto;  
+.about__portait, .about__portrait-byline, .about__me { 
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .about__portait {
-    max-width: 540px;
+    width: 90%;
     border: 20px solid #000;
 }
 
 .about__portrait-byline {
     position: relative;
     top: -17px;
-    padding: 0 0 30px 30px;
-    text-align: left !important;
+    padding: 0 30px 30px 0;
+    text-align: right;
     font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 10px;
     color: rgba(255, 255, 255, .2);
     z-index: 2;
-}
-
-.about__me {
-  display: inline-block;
 }
 
 .about__intro {
