@@ -1,24 +1,50 @@
 #main {
   width: 90%;
-  max-width: 960px;
   margin: 50% auto 100%;
 }
 
 #showreel {
-    padding: 20% 0;
+    max-width: 960px;
+    padding: 10% 0;
+    margin: 50% auto 100%;
 }
 
 #about {
   margin: 80% auto 100%;
-  padding-top: 20%;
+  padding-top: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.about__portait, .about__portrait-byline, .about__me {
+    width: auto;  
+    max-width: 600px;
+}
+
+.about__portait {
+    max-width: 540px;
+    border: 20px solid #000;
+}
+
+.about__portrait-byline {
+    position: relative;
+    top: -17px;
+    padding: 0 0 30px 30px;
+    text-align: left !important;
+    font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: rgba(255, 255, 255, .2);
+    z-index: 2;
 }
 
 .about__me {
-  background: rgba(0,0,0,.5);
-  padding: 60px;
+  display: inline-block;
 }
+
 .about__intro {
   max-width: 600px;
   margin: auto;
   padding-top: 30px;
+  text-align: left;
 }
+
