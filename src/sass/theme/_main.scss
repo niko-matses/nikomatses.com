@@ -22,8 +22,9 @@
 }
 
 .about__portait {
-    width: 90%;
-    border: 20px solid #000;
+ width: 100%;
+ box-sizing: border-box;
+ border: 20px solid #000;
 }
 
 .about__portrait-byline {
