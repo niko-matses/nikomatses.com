@@ -12,10 +12,22 @@
 <!--[if IE]>
   <link href="stylesheets/pres/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 <![endif]-->
-<link href="stylesheets/index.css" rel="stylesheet" type="text/css">    
+<link href="stylesheets/index.css" rel="stylesheet" type="text/css"> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75336473-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body> 
-
+<div id="wrapper">
+    <div id="bg-container"></div>    
+</div>
 <header class="header">
   <section class="header__intro">
     <article>
@@ -25,20 +37,25 @@
     </article>
   </section>
 </header>
-    
+
+<div id="main__gradient-in"></div> 
 <main id="main">
   <section id="showreel" name="showreel">
 	<div class='embed-container'><iframe src='https://player.vimeo.com/video/131066298?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 	<a class="cta" href="#about">About</a>
   </section>
     
-  <section id="about" name="about">
-
-    <article class="about__me">
          <figure class="about__portrait-container">
           <img class="about__portait" src="img/niko-matses-films-live-concert-of-analog-heart-photo-by-scott-cody.jpg");>
           <figcaption class="about__portrait-byline">Photo: Scott Cody</figcaption>
-        </figure> 
+        </figure>     
+    
+  <section id="about" name="about">
+      
+
+      
+    <article class="about__me">
+
         <h2  class="tk-rinse">About</h2>     
         <p class="about__intro">Boston-based cinematographer, editor, and colorist seeking collaborators for short film and music video projects. I've worked five years semi-professionally as a photographer, camera operator, director and producer - with a professional career as a front-end web developer.</p>
         <p class="about__intro">I have a passion for music, art, filmmaking, sound design and cinematography. I'm constantly interested in discussing new and exciting creative projects. If you think you might like to collaborate, let's talk shop!</p>
@@ -46,9 +63,11 @@
     </article>
   </section>
 </main>
+<div id="main__gradient-out"></div>    
     
 <footer class="footer">
   <section id="contact" name="contact">
+    <h2 class="tk-rinse">Contact</h2>
 	<a class="cta contact__cta" href="tel:9782890008">Call</a>
 	<a class="cta contact__cta" href="mailto:gigs@nikomatses.com">Email</a>
     <span class="copyright">&copy;2016 Niko Matses /  978.289.0008 / gigs@nikomatses.com</span>

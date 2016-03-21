@@ -75,8 +75,14 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
+@media (max-width: 1024px) {
+  /* line 1, ../sass/theme/_base.scss */
+  html {
+    background: #000;
+  }
+}
 
-/* line 15, ../sass/theme/_base.scss */
+/* line 18, ../sass/theme/_base.scss */
 body {
   height: 100%;
   -webkit-animation: fadein 3s;
@@ -90,6 +96,58 @@ body {
   animation: fadein 3s;
 }
 
+/* line 28, ../sass/theme/_base.scss */
+#wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1920px;
+  position: fixed;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  /* line 37, ../sass/theme/_base.scss */
+  #bg-container {
+    background-image: url(../img/lumix-gh-cinema-rig-shallow-depth-of-field.jpg);
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  /* line 53, ../sass/theme/_base.scss */
+  #bg-container {
+    height: 1024px;
+  }
+}
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  /* line 62, ../sass/theme/_base.scss */
+  #bg-container {
+    height: 768px;
+  }
+}
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40 / 71) {
+  /* line 72, ../sass/theme/_base.scss */
+  #bg-container {
+    height: 500px;
+  }
+}
 /* line 2, ../sass/theme/_typography.scss */
 html {
   font-size: 16px;
@@ -167,51 +225,63 @@ p {
 
 /* line 1, ../sass/theme/_main.scss */
 #main {
-  width: 90%;
-  margin: 50% auto 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25% 0 25%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 6, ../sass/theme/_main.scss */
-#showreel {
-  max-width: 960px;
-  padding: 10% 0;
-  margin: 50% auto 100%;
+/* line 8, ../sass/theme/_main.scss */
+#main__gradient-in, #main__gradient-out {
+  height: 50vh;
 }
 
 /* line 12, ../sass/theme/_main.scss */
+#showreel {
+  max-width: 960px;
+  padding: 10% 0;
+  margin: 25% auto 100%;
+}
+
+/* line 18, ../sass/theme/_main.scss */
 #about {
-  margin: 80% auto 100%;
-  padding-top: 5%;
+  margin: 0 auto;
   text-align: center;
   width: 100%;
+  padding-top: 25%;
 }
 
-/* line 19, ../sass/theme/_main.scss */
-.about__portait, .about__portrait-byline, .about__me {
+/* line 25, ../sass/theme/_main.scss */
+.about__portait, .about__me {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* line 24, ../sass/theme/_main.scss */
+/* line 32, ../sass/theme/_main.scss */
 .about__portait {
   width: 100%;
   box-sizing: border-box;
   border: 20px solid #000;
+  padding: 0;
 }
 
-/* line 30, ../sass/theme/_main.scss */
+/* line 39, ../sass/theme/_main.scss */
+.about__portrait-container {
+  padding-bottom: 100%;
+}
+
+/* line 43, ../sass/theme/_main.scss */
 .about__portrait-byline {
-  position: relative;
-  top: -17px;
-  padding: 0 30px 30px 0;
-  text-align: right;
+  padding-left: 20px;
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.2);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #fff;
   z-index: 2;
 }
 
-/* line 41, ../sass/theme/_main.scss */
+/* line 52, ../sass/theme/_main.scss */
 .about__intro {
   max-width: 600px;
   margin: auto;
@@ -219,20 +289,40 @@ p {
   text-align: left;
 }
 
+/* line 59, ../sass/theme/_main.scss */
+#main__gradient-in {
+  margin: 100% auto 0;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+}
+
+/* line 68, ../sass/theme/_main.scss */
+#main__gradient-out {
+  margin: 0 auto 100%;
+  background: -webkit-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -moz-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
 /* line 1, ../sass/theme/_footer.scss */
 .footer {
   width: 100%;
   margin: auto;
-  font-size: .75em;
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.5em;
 }
 
-/* line 11, ../sass/theme/_footer.scss */
+/* line 10, ../sass/theme/_footer.scss */
 .copyright {
   display: block;
+  font-size: .75em;
   appearance: normal;
   margin: 30px auto 5px;
 }
