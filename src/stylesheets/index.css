@@ -244,52 +244,6 @@ p {
 }
 
 /* line 18, ../sass/theme/_main.scss */
-#about {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  padding-top: 25%;
-}
-
-/* line 25, ../sass/theme/_main.scss */
-.about__portait, .about__me {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* line 32, ../sass/theme/_main.scss */
-.about__portait {
-  width: 100%;
-  box-sizing: border-box;
-  border: 20px solid #000;
-  padding: 0;
-}
-
-/* line 39, ../sass/theme/_main.scss */
-.about__portrait-container {
-  padding-bottom: 100%;
-}
-
-/* line 43, ../sass/theme/_main.scss */
-.about__portrait-byline {
-  padding-left: 20px;
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 9px;
-  letter-spacing: 1px;
-  color: #fff;
-  z-index: 2;
-}
-
-/* line 52, ../sass/theme/_main.scss */
-.about__intro {
-  max-width: 600px;
-  margin: auto;
-  padding-top: 30px;
-  text-align: left;
-}
-
-/* line 59, ../sass/theme/_main.scss */
 #main__gradient-in {
   margin: 100% auto 0;
   background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
@@ -299,7 +253,7 @@ p {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
 }
 
-/* line 68, ../sass/theme/_main.scss */
+/* line 27, ../sass/theme/_main.scss */
 #main__gradient-out {
   margin: 0 auto 100%;
   background: -webkit-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -307,6 +261,65 @@ p {
   background: -ms-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
   background: -moz-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
   background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+/* line 3, ../sass/theme/_about.scss */
+#about {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+}
+
+/* line 10, ../sass/theme/_about.scss */
+.about__portait, .about__me {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* line 16, ../sass/theme/_about.scss */
+.about__me {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 959px) {
+  /* line 16, ../sass/theme/_about.scss */
+  .about__me {
+    margin: 0;
+  }
+}
+
+/* line 25, ../sass/theme/_about.scss */
+.about__portait {
+  width: 100%;
+  box-sizing: border-box;
+  border: 20px solid #000;
+  padding: 0;
+}
+
+/* line 32, ../sass/theme/_about.scss */
+.about__portrait-container {
+  padding-bottom: 100%;
+}
+
+/* line 36, ../sass/theme/_about.scss */
+.about__portrait-byline {
+  padding-left: 20px;
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #fff;
+  z-index: 2;
+}
+
+/* line 45, ../sass/theme/_about.scss */
+.about__intro {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 30px;
+  text-align: left;
 }
 
 /* line 1, ../sass/theme/_footer.scss */
@@ -426,6 +439,155 @@ p {
   }
   to {
     opacity: 1;
+  }
+}
+/* fade on scroll */
+/* line 31, ../sass/modules/_animate.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 32, ../sass/modules/_animate.scss */
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 34, ../sass/modules/_animate.scss */
+.cbp-so-scroller {
+  margin-top: 3em;
+  overflow: hidden;
+}
+
+/* line 39, ../sass/modules/_animate.scss */
+.cbp-so-section {
+  margin-bottom: 15em;
+}
+
+/* Clear floats of children */
+/* line 44, ../sass/modules/_animate.scss */
+.cbp-so-section:before,
+.cbp-so-section:after {
+  content: " ";
+  display: table;
+}
+
+/* line 50, ../sass/modules/_animate.scss */
+.cbp-so-section:after {
+  clear: both;
+}
+
+/* Text styling */
+/* Sides */
+/* line 60, ../sass/modules/_animate.scss */
+.cbp-so-side {
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 3em 2%;
+  overflow: hidden;
+  min-height: 12em;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Clear floats of children */
+/* line 73, ../sass/modules/_animate.scss */
+.cbp-so-side:before,
+.cbp-so-side:after {
+  content: " ";
+  display: table;
+}
+
+/* line 79, ../sass/modules/_animate.scss */
+.cbp-so-side:after {
+  clear: both;
+}
+
+@media (min-width: 959px) {
+  /* line 85, ../sass/modules/_animate.scss */
+  .cbp-so-side-right {
+    text-align: left;
+  }
+
+  /* line 89, ../sass/modules/_animate.scss */
+  .cbp-so-side-left {
+    text-align: right;
+  }
+
+  /* line 93, ../sass/modules/_animate.scss */
+  .cbp-so-side-right img {
+    float: left;
+  }
+
+  /* line 97, ../sass/modules/_animate.scss */
+  .cbp-so-side-left img {
+    float: right;
+  }
+}
+/* Initial state (hidden or anything else) */
+/* line 103, ../sass/modules/_animate.scss */
+.cbp-so-init .cbp-so-side {
+  opacity: 0;
+}
+
+/* line 107, ../sass/modules/_animate.scss */
+.cbp-so-init .cbp-so-side-left {
+  -webkit-transform: translateX(-80px);
+  -moz-transform: translateX(-80px);
+  transform: translateX(-80px);
+}
+
+/* line 113, ../sass/modules/_animate.scss */
+.cbp-so-init .cbp-so-side-right {
+  -webkit-transform: translateX(80px);
+  -moz-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+/* line 121, ../sass/modules/_animate.scss */
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* For example, add a delay for the right side:
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+@media screen and (max-width: 960px) {
+  /* line 138, ../sass/modules/_animate.scss */
+  .cbp-so-scroller {
+    font-size: 80%;
+  }
+
+  /* line 142, ../sass/modules/_animate.scss */
+  .cbp-so-side img {
+    max-width: 120%;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* line 148, ../sass/modules/_animate.scss */
+  .cbp-so-side {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 153, ../sass/modules/_animate.scss */
+  .cbp-so-side img {
+    max-width: 100%;
   }
 }
 /* line 1, ../sass/modules/_vimeo.scss */
