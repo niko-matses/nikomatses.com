@@ -7,12 +7,13 @@
 <title>Niko Matses - Cinematographer / Editor</title>
 <script src="https://use.typekit.net/qbp5vqk.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>   
-<link href="stylesheets/pres/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<link href="stylesheets/pres/print.css" media="print" rel="stylesheet" type="text/css" />
+<link href="css/pres/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="css/pres/print.css" media="print" rel="stylesheet" type="text/css" />
 <!--[if IE]>
   <link href="stylesheets/pres/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 <![endif]-->
-<link href="stylesheets/index.css" rel="stylesheet" type="text/css"> 
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script src="js/modernizr.custom.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,7 +25,7 @@
 
 </script>
 </head>
-<body> 
+<body>    
 <div id="wrapper">
     <div id="bg-container"></div>    
 </div>
@@ -43,25 +44,27 @@
   <section id="showreel" name="showreel">
 	<div class='embed-container'><iframe src='https://player.vimeo.com/video/131066298?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 	<a class="cta" href="#about">About</a>
-  </section>
+    </section>
     
-         <figure class="about__portrait-container">
-          <img class="about__portait" src="img/niko-matses-films-live-concert-of-analog-heart-photo-by-scott-cody.jpg");>
-          <figcaption class="about__portrait-byline">Photo: Scott Cody</figcaption>
-        </figure>     
-    
-  <section id="about" name="about">
-      
+    <div id="about" name="about" class="about__container">	
+			<div id="cbp-so-scroller" class="cbp-so-scroller">
+				<section class="cbp-so-section">
+					<figure class="cbp-so-side cbp-so-side-left">
+						<img src="img/niko-matses-portrait.jpg" alt="Portriat of Niko Matses">
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+                        <article class="about__me">
 
-      
-    <article class="about__me">
-
-        <h2  class="tk-rinse">About</h2>     
-        <p class="about__intro">Boston-based cinematographer, editor, and colorist seeking collaborators for short film and music video projects. I've worked five years semi-professionally as a photographer, camera operator, director and producer - with a professional career as a front-end web developer.</p>
-        <p class="about__intro">I have a passion for music, art, filmmaking, sound design and cinematography. I'm constantly interested in discussing new and exciting creative projects. If you think you might like to collaborate, let's talk shop!</p>
+                            <h2  class="tk-rinse">About</h2>     
+                               <p class="about__intro">Boston-based cinematographer, editor, and motion designer seeking collaborators for short film and music video projects. I've worked five years semi-professionally as a photographer, camera operator, editor, director and producer - with a professional career as a front-end web developer.</p>
+                               <p class="about__intro">I have a passion for music, art, design and cinematography. I'm constantly interested in discussing new and exciting creative projects. If you think you might like to collaborate on a short film, music video, documentary or event, let's talk shop!</p>
         <a href="#contact" class="cta">Contact</a>
-    </article>
-  </section>
+                      </article>		
+				</article>
+			</section>
+		</div>
+    </div>
+	
 </main>
 <div id="main__gradient-out"></div>    
     
@@ -93,15 +96,20 @@
 </body>
 <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
-    var $root = $('html, body');
-    $('a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
+        var $root = $('html, body');
+        $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
         });
-        return false;
-    });
-</script>
+    </script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpScroller.js"></script>
+    <script>
+        new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+    </script>    
 </html>

@@ -4,8 +4,8 @@
 	font-size: 14px;
 	display:block;
 	padding: 15px 30px;
-	color:#000;
-	background: #fff;
+	color:#fff;
+	background: $blue;
 	text-decoration: none;
 	text-transform:uppercase;
 	letter-spacing: 1px;
@@ -19,8 +19,8 @@
   margin: 0;    
 }
 .cta:hover {
-	color: #fff;
-	background: $blue;	
+	color: #000;
+	background: #fff;	
 }
 .contact__cta {
   display: inline-block;
