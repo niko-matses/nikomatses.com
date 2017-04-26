@@ -214,29 +214,44 @@ p {
 .nav {
   position: fixed;
   right: 0;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  /* line 1, ../sass/theme/_nav.scss */
+  .nav {
+    width: auto;
+  }
 }
 
-/* line 5, ../sass/theme/_nav.scss */
+/* line 9, ../sass/theme/_nav.scss */
 .nav__menu {
-  padding: 0 30px;
-}
-
-/* line 8, ../sass/theme/_nav.scss */
-.nav__menu-item {
-  display: inline-block;
-  padding: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-align: center;
 }
 
 /* line 14, ../sass/theme/_nav.scss */
+.nav__menu-item {
+  display: inline-block;
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (min-width: 640px) {
+  /* line 14, ../sass/theme/_nav.scss */
+  .nav__menu-item {
+    padding: 30px;
+    font-size: 1em;
+  }
+}
+
+/* line 25, ../sass/theme/_nav.scss */
 .nav__menu-link {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: color .3s;
 }
-/* line 18, ../sass/theme/_nav.scss */
+/* line 29, ../sass/theme/_nav.scss */
 .nav__menu-link:hover {
   color: #fff !important;
 }
