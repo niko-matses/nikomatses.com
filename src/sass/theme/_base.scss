@@ -3,16 +3,13 @@ html {
     background: #000;
 }
 	height: 100%;
-	background: #0f2938; /* Old browsers */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$green', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-	background: -moz-linear-gradient(top, $green 0%, #000000 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, $green 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, $green 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	//background: #000 url(../img/niko-matses-cinematographer.jpg);
+	background: $gray;
+	background: $gray url(../img/niko-matses_ui-designer_chalkboard-wireframing.jpg);
 	background-repeat:no-repeat;
 	background-position: 20% 50%;
 	background-size:cover;
 	background-attachment:fixed;
+   
 }
 
 body {
@@ -35,7 +32,7 @@ body {
 
 #bg-container {
   @media (max-width:1024px) {
-    //background-image: url(../img/niko-matses-cinematographer.jpg);
+    background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing.jpgr);
     background-attachment:scroll;
     background-position: 30% 0;
     background-size:cover;

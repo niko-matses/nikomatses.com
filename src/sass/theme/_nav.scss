@@ -2,21 +2,17 @@
    position: fixed;
    right: 0;
    width: 100%;
-   @media (min-width:640px) {
-      width: auto;
-   } 
 }
 .nav__menu {
-   
-   
-   text-align: center;
+   text-align: right;
 }
 .nav__menu-item {
    display: inline-block;
    padding: 15px;
+   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-size: 14px;
    text-transform: uppercase;
-   letter-spacing: 1px;
+   letter-spacing: 1px;   
    @media (min-width:640px) {
       padding: 30px;
       font-size: 1em;
@@ -24,9 +20,17 @@
 }
 .nav__menu-link {
     @include smoothText;
-	font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-   transition: color .3s;
-   &:hover {
+    transition: color .3s;
+    &:hover {
       color: #fff !important;
-   }
+    }
+}
+
+.nav__menu-item--logo {
+   position: relative;
+   display: inline;
+   left: 0;
+   font-size: 18px;
+   font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   letter-spacing: 5px;
 }

@@ -59,16 +59,8 @@ table {
 /* line 1, ../sass/theme/_base.scss */
 html {
   height: 100%;
-  background: #0f2938;
-  /* Old browsers */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$green', endColorstr='#000000',GradientType=0 );
-  /* IE6-9 */
-  background: -moz-linear-gradient(top, #0f6938 0%, #000000 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #0f6938 0%, #000000 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #0f6938 0%, #000000 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #0f0f0f;
+  background: #0f0f0f url(../img/niko-matses_ui-designer_chalkboard-wireframing.jpg);
   background-repeat: no-repeat;
   background-position: 20% 50%;
   background-size: cover;
@@ -81,7 +73,7 @@ html {
   }
 }
 
-/* line 18, ../sass/theme/_base.scss */
+/* line 15, ../sass/theme/_base.scss */
 body {
   height: 100%;
   -webkit-animation: fadein 3s;
@@ -95,7 +87,7 @@ body {
   animation: fadein 3s;
 }
 
-/* line 27, ../sass/theme/_base.scss */
+/* line 24, ../sass/theme/_base.scss */
 #wrapper {
   padding: 0;
   margin: 0;
@@ -106,8 +98,9 @@ body {
 }
 
 @media (max-width: 1024px) {
-  /* line 36, ../sass/theme/_base.scss */
+  /* line 33, ../sass/theme/_base.scss */
   #bg-container {
+    background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing.jpgr);
     background-attachment: scroll;
     background-position: 30% 0;
     background-size: cover;
@@ -122,7 +115,7 @@ body {
  * iPad with portrait orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 52, ../sass/theme/_base.scss */
+  /* line 49, ../sass/theme/_base.scss */
   #bg-container {
     height: 1024px;
   }
@@ -131,7 +124,7 @@ body {
  * iPad with landscape orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 61, ../sass/theme/_base.scss */
+  /* line 58, ../sass/theme/_base.scss */
   #bg-container {
     height: 768px;
   }
@@ -141,7 +134,7 @@ body {
  * You can also target devices with aspect ratio.
  */
 @media screen and (device-aspect-ratio: 40 / 71) {
-  /* line 71, ../sass/theme/_base.scss */
+  /* line 68, ../sass/theme/_base.scss */
   #bg-container {
     height: 500px;
   }
@@ -159,7 +152,7 @@ h1, h2, p {
 }
 
 /* line 9, ../sass/theme/_typography.scss */
-a, footer {
+footer {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -189,18 +182,17 @@ h2 {
   font-size: 1.75em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-bottom: 1px solid;
   margin-bottom: 15px;
   padding: 0 0 15px;
 }
 
-/* line 35, ../sass/theme/_typography.scss */
+/* line 34, ../sass/theme/_typography.scss */
 a {
   text-decoration: none;
   color: #f1f1f1;
 }
 
-/* line 39, ../sass/theme/_typography.scss */
+/* line 38, ../sass/theme/_typography.scss */
 p {
   color: #f1f1f1;
   font-size: 1.25em;
@@ -213,44 +205,48 @@ p {
   right: 0;
   width: 100%;
 }
-@media (min-width: 640px) {
-  /* line 1, ../sass/theme/_nav.scss */
-  .nav {
-    width: auto;
-  }
+
+/* line 6, ../sass/theme/_nav.scss */
+.nav__menu {
+  text-align: right;
 }
 
 /* line 9, ../sass/theme/_nav.scss */
-.nav__menu {
-  text-align: center;
-}
-
-/* line 14, ../sass/theme/_nav.scss */
 .nav__menu-item {
   display: inline-block;
   padding: 15px;
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 @media (min-width: 640px) {
-  /* line 14, ../sass/theme/_nav.scss */
+  /* line 9, ../sass/theme/_nav.scss */
   .nav__menu-item {
     padding: 30px;
     font-size: 1em;
   }
 }
 
-/* line 25, ../sass/theme/_nav.scss */
+/* line 21, ../sass/theme/_nav.scss */
 .nav__menu-link {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: color .3s;
 }
-/* line 29, ../sass/theme/_nav.scss */
+/* line 24, ../sass/theme/_nav.scss */
 .nav__menu-link:hover {
   color: #fff !important;
+}
+
+/* line 29, ../sass/theme/_nav.scss */
+.nav__menu-item--logo {
+  position: relative;
+  display: inline;
+  left: 0;
+  font-size: 18px;
+  font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 5px;
 }
 
 /* line 1, ../sass/theme/_header.scss */
@@ -407,7 +403,8 @@ p {
 .cta {
   width: 50%;
   max-width: 300px;
-  font-size: 14px;
+  font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   display: block;
   padding: 15px 30px;
   color: #f1f1f1;
@@ -416,23 +413,23 @@ p {
   letter-spacing: 1px;
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 50px auto 0;
-  background: #0f6938;
+  background: #45B649;
 }
 
-/* line 16, ../sass/modules/_cta.scss */
+/* line 17, ../sass/modules/_cta.scss */
 .anchor {
   visibility: hidden;
   padding-top: 100px;
   margin: 0;
 }
 
-/* line 21, ../sass/modules/_cta.scss */
+/* line 22, ../sass/modules/_cta.scss */
 .cta:hover {
-  color: #f1f1f1;
+  color: #45B649;
   background: #0f0f0f;
 }
 
-/* line 25, ../sass/modules/_cta.scss */
+/* line 26, ../sass/modules/_cta.scss */
 .contact__cta {
   display: inline-block;
   margin: 15px;

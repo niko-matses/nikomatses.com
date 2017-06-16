@@ -6,7 +6,7 @@ h1, h2, p {
     @include smoothText;
 	font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
- a, footer {
+ footer {
 	font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -28,7 +28,6 @@ h2 {
 	font-size: 1.75em;
 	letter-spacing: 1px;
 	text-transform:uppercase;
-	border-bottom: 1px solid;
 	margin-bottom: 15px;
     padding: 0 0 15px;
 }
