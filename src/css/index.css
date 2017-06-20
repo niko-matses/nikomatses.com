@@ -60,7 +60,7 @@ table {
 html {
   height: 100%;
   background: #0f0f0f;
-  background: #0f0f0f url(../img/niko-matses_ui-designer_chalkboard-wireframing.jpg);
+  background: #0f0f0f url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
   background-repeat: no-repeat;
   background-position: 20% 50%;
   background-size: cover;
@@ -100,7 +100,7 @@ body {
 @media (max-width: 1024px) {
   /* line 33, ../sass/theme/_base.scss */
   #bg-container {
-    background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing.jpgr);
+    background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
     background-attachment: scroll;
     background-position: 30% 0;
     background-size: cover;
