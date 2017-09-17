@@ -7,6 +7,7 @@
    text-align: right;
 }
 .nav__menu-item {
+   color: $white;
    display: inline-block;
    padding: 15px;
    font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,6 +21,8 @@
 }
 .nav__menu-link {
     @include smoothText;
+    color: $white;
+    text-decoration: none;
     transition: color .3s;
     &:hover {
       color: #fff !important;

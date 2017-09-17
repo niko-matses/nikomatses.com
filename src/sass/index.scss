@@ -1,25 +1,19 @@
-$green: #45B649;
-$yellow: #DCE35B;
-$blue: #4BDBE7;
-$gray: #0f0f0f;
-$white: #f1f1f1;
-
-@mixin smoothText {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale;
-}
-
 @charset "utf-8";
 
+@import 'variables';
 @import 'pres/reset';
-@import 'theme/base';
-@import 'theme/typography';
-@import 'theme/nav';
-@import 'theme/header';
-@import 'theme/main';
-@import 'theme/about';
-@import 'theme/footer';
+
+@import 'components/base';
+@import 'components/typography';
+@import 'components/nav';
+@import 'components/header';
+@import 'components/main';
+@import 'components/about';
+@import 'components/footer';
+@import 'components/projects';
 
 @import 'modules/cta';
 @import 'modules/animate';
 @import 'modules/vimeo';
+
+@import 'base/base';

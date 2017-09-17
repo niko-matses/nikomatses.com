@@ -1,0 +1,72 @@
+/* line 1, ../../sass/base/components/_hero.scss */
+.hero {
+  min-height: 600px;
+  background: #00ADEF;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* line 7, ../../sass/base/components/_hero.scss */
+.hero .hero__headline {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 3em;
+  padding: .5em;
+  color: #fff;
+}
+
+/* line 2, ../../sass/base/components/_main-content.scss */
+.main-content .main-content__margins {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+/* line 7, ../../sass/base/components/_main-content.scss */
+.main-content .main-content__headline {
+  font-size: 2em;
+  line-height: 1.25em;
+  padding-bottom: 1em;
+  color: #00ADEF;
+}
+/* line 13, ../../sass/base/components/_main-content.scss */
+.main-content .main-content__button {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em 1.5em;
+  margin: 1em 0 2em;
+  border: 3px solid #00ADEF;
+  text-decoration: none;
+  background-color: #00ADEF;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 25, ../../sass/base/components/_main-content.scss */
+.main-content .content--inverted {
+  padding: 2em 0;
+  margin: 2em 0;
+  background: #00ADEF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 30, ../../sass/base/components/_main-content.scss */
+.main-content .content--inverted .main-content__headline,
+.main-content .content--inverted .main-content__subhead,
+.main-content .content--inverted .main-content__paragraph,
+.main-content .content--inverted .main-content__lead-paragraph {
+  color: #fff;
+}
+/* line 36, ../../sass/base/components/_main-content.scss */
+.main-content .content--inverted .main-content__button {
+  background: #fff;
+  color: #00ADEF;
+}
+
+/* line 8, ../../sass/base/base.scss */
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}

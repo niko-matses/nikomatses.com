@@ -1,0 +1,49 @@
+@mixin capSpace {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.section__projects {
+   @include smoothText;
+}
+.main-content__headline {}
+.project__card {
+   padding-bottom: 2em;
+}
+.project__label {
+   
+}
+.project__details {}
+.project__title {
+   color: $blue;
+   letter-spacing: 1px;
+   font-size: 1.25em;
+   padding-bottom: 15px;
+}
+.project__description {
+   color: $white;
+   font-size: .9em;
+   line-height: 1.2em;
+   padding-bottom: 10px;
+}
+.project__role, .project__tools {
+   font-size: .75em;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: $gray;
+   padding-bottom: 10px;
+}
+.project__tools {
+   padding-bottom: 15px;
+}
+.project__cta {
+   @include capSpace;
+   display: inline-block;
+   padding: 10px;
+   background: $blue;
+   font-size: .66em;   
+   .project__link {
+      color: $white;
+      text-decoration: none;
+   }
+}

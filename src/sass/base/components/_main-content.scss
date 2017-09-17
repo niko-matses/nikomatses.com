@@ -1,0 +1,41 @@
+.main-content {
+    .main-content__margins {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+    .main-content__headline {
+      font-size: 2em;
+      line-height: 1.25em;
+      padding-bottom: 1em;
+      color: $blue;
+    }
+    .main-content__button {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 1em 1.5em;
+        margin: 1em 0 2em;
+        border: 3px solid $blue;
+        text-decoration: none;
+        background-color: $blue;
+        color: #fff;
+        @include smoothText;
+  }
+  .content--inverted {
+      padding: 2em 0;
+      margin: 2em 0;
+      background: $blue;
+      @include smoothText;
+        .main-content__headline,
+        .main-content__subhead,
+        .main-content__paragraph,
+        .main-content__lead-paragraph {
+          color: #fff;
+        }
+        .main-content__button {
+          background: #fff;
+          color: $blue;
+        }
+    }
+}

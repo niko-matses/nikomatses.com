@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.copyright {
+    text-align:center;
+    font-size: .8em;
+    color:#fff;
+    padding:50px 30px 0;
+}
+
+@media (max-width:960px) {
+    .nav__link {
+        display: none;
+    }
+}

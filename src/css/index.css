@@ -56,24 +56,24 @@ table {
   border-spacing: 0;
 }
 
-/* line 1, ../sass/theme/_base.scss */
+/* line 1, ../sass/components/_base.scss */
 html {
   height: 100%;
-  background: #0f0f0f;
-  background: #0f0f0f url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
+  background: #898989;
+  background: #898989 url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
   background-repeat: no-repeat;
   background-position: 20% 50%;
   background-size: cover;
   background-attachment: fixed;
 }
 @media (max-width: 1024px) {
-  /* line 1, ../sass/theme/_base.scss */
+  /* line 1, ../sass/components/_base.scss */
   html {
     background: #000;
   }
 }
 
-/* line 15, ../sass/theme/_base.scss */
+/* line 15, ../sass/components/_base.scss */
 body {
   height: 100%;
   -webkit-animation: fadein 3s;
@@ -87,7 +87,7 @@ body {
   animation: fadein 3s;
 }
 
-/* line 24, ../sass/theme/_base.scss */
+/* line 24, ../sass/components/_base.scss */
 #wrapper {
   padding: 0;
   margin: 0;
@@ -98,7 +98,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  /* line 33, ../sass/theme/_base.scss */
+  /* line 33, ../sass/components/_base.scss */
   #bg-container {
     background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
     background-attachment: scroll;
@@ -115,7 +115,7 @@ body {
  * iPad with portrait orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 49, ../sass/theme/_base.scss */
+  /* line 49, ../sass/components/_base.scss */
   #bg-container {
     height: 1024px;
   }
@@ -124,7 +124,7 @@ body {
  * iPad with landscape orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 58, ../sass/theme/_base.scss */
+  /* line 58, ../sass/components/_base.scss */
   #bg-container {
     height: 768px;
   }
@@ -134,85 +134,95 @@ body {
  * You can also target devices with aspect ratio.
  */
 @media screen and (device-aspect-ratio: 40 / 71) {
-  /* line 68, ../sass/theme/_base.scss */
+  /* line 68, ../sass/components/_base.scss */
   #bg-container {
     height: 500px;
   }
 }
-/* line 2, ../sass/theme/_typography.scss */
+/* line 2, ../sass/components/_typography.scss */
 html {
   font-size: 16px;
 }
 
-/* line 5, ../sass/theme/_typography.scss */
-h1, h2, p {
+/* line 5, ../sass/components/_typography.scss */
+.main-content__headline, .main-content__subhead {
+  font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 9, ../sass/components/_typography.scss */
+.main-content__lead-paragraph, .main-content__paragraph {
   font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 9, ../sass/theme/_typography.scss */
-footer {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 13, ../sass/theme/_typography.scss */
-h1, h2, a, footer {
-  text-align: center;
-  margin: auto;
-}
-
-/* line 17, ../sass/theme/_typography.scss */
-h1 {
-  color: #fff;
-  font-size: 3em;
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  /* line 17, ../sass/theme/_typography.scss */
-  h1 {
-    font-size: 2em;
-  }
-}
-
-/* line 25, ../sass/theme/_typography.scss */
-h2 {
-  width: 66%;
-  color: #f1f1f1;
-  font-size: 1.75em;
+/* line 19, ../sass/components/_typography.scss */
+.main-content__subhead {
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  padding: 0 0 15px;
+  color: #00ADEF;
+  padding-bottom: 1em;
 }
 
-/* line 34, ../sass/theme/_typography.scss */
-a {
+/* line 26, ../sass/components/_typography.scss */
+.main-content__paragraph, .main-content__lead-paragraph {
+  font-size: 1.15em;
+  line-height: 1.5em;
+  color: #898989;
+  padding-bottom: 1.5em;
+}
+/* line 31, ../sass/components/_typography.scss */
+.main-content__paragraph a, .main-content__lead-paragraph a {
+  color: #00ADEF;
   text-decoration: none;
-  color: #f1f1f1;
 }
 
-/* line 38, ../sass/theme/_typography.scss */
-p {
-  color: #f1f1f1;
-  font-size: 1.25em;
+/* line 36, ../sass/components/_typography.scss */
+.main-content__lead-paragraph {
+  font-size: 1.5em;
   line-height: 1.5em;
 }
 
-/* line 1, ../sass/theme/_nav.scss */
+/* line 40, ../sass/components/_typography.scss */
+.main-content__ordered-list, main-content__unordered-list {
+  display: block;
+  color: #f1f1f1;
+  list-style: outside;
+  margin: 0 0 2em 2em;
+}
+/* line 45, ../sass/components/_typography.scss */
+.main-content__ordered-list li, main-content__unordered-list li {
+  list-style-type: decimal-leading-zero;
+}
+/* line 48, ../sass/components/_typography.scss */
+.main-content__ordered-list .main-content__subhead, main-content__unordered-list .main-content__subhead {
+  padding-left: 1em;
+  text-transform: none;
+}
+/* line 52, ../sass/components/_typography.scss */
+.main-content__ordered-list .main-content__headline, main-content__unordered-list .main-content__headline {
+  text-transform: none;
+  font-weight: normal;
+}
+
+/* line 1, ../sass/components/_nav.scss */
 .nav {
   position: fixed;
   right: 0;
   width: 100%;
 }
 
-/* line 6, ../sass/theme/_nav.scss */
+/* line 6, ../sass/components/_nav.scss */
 .nav__menu {
   text-align: right;
 }
 
-/* line 9, ../sass/theme/_nav.scss */
+/* line 9, ../sass/components/_nav.scss */
 .nav__menu-item {
+  color: #f1f1f1;
   display: inline-block;
   padding: 15px;
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -221,25 +231,27 @@ p {
   letter-spacing: 1px;
 }
 @media (min-width: 640px) {
-  /* line 9, ../sass/theme/_nav.scss */
+  /* line 9, ../sass/components/_nav.scss */
   .nav__menu-item {
     padding: 30px;
     font-size: 1em;
   }
 }
 
-/* line 21, ../sass/theme/_nav.scss */
+/* line 22, ../sass/components/_nav.scss */
 .nav__menu-link {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #f1f1f1;
+  text-decoration: none;
   transition: color .3s;
 }
-/* line 24, ../sass/theme/_nav.scss */
+/* line 27, ../sass/components/_nav.scss */
 .nav__menu-link:hover {
   color: #fff !important;
 }
 
-/* line 29, ../sass/theme/_nav.scss */
+/* line 32, ../sass/components/_nav.scss */
 .nav__menu-item--logo {
   position: relative;
   display: inline;
@@ -249,11 +261,11 @@ p {
   letter-spacing: 5px;
 }
 
-/* line 1, ../sass/theme/_header.scss */
+/* line 1, ../sass/components/_header.scss */
 .header {
   height: 100%;
 }
-/* line 4, ../sass/theme/_header.scss */
+/* line 4, ../sass/components/_header.scss */
 .header .header__intro {
   height: 100%;
   width: 100%;
@@ -262,7 +274,7 @@ p {
   align-items: center;
 }
 
-/* line 1, ../sass/theme/_main.scss */
+/* line 1, ../sass/components/_main.scss */
 #main {
   width: 100%;
   margin: 0 auto;
@@ -270,19 +282,19 @@ p {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 8, ../sass/theme/_main.scss */
+/* line 8, ../sass/components/_main.scss */
 #main__gradient-in, #main__gradient-out {
   height: 50vh;
 }
 
-/* line 12, ../sass/theme/_main.scss */
+/* line 12, ../sass/components/_main.scss */
 #showreel {
   max-width: 960px;
   padding: 10% 0;
   margin: 25% auto 100%;
 }
 
-/* line 18, ../sass/theme/_main.scss */
+/* line 18, ../sass/components/_main.scss */
 #main__gradient-in {
   margin: 100% auto 0;
   background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
@@ -292,7 +304,7 @@ p {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
 }
 
-/* line 27, ../sass/theme/_main.scss */
+/* line 27, ../sass/components/_main.scss */
 #main__gradient-out {
   margin: 0 auto 100%;
   background: -webkit-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -302,7 +314,7 @@ p {
   background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-/* line 3, ../sass/theme/_about.scss */
+/* line 3, ../sass/components/_about.scss */
 #about {
   margin: 0 auto;
   text-align: center;
@@ -310,38 +322,38 @@ p {
   padding-top: 10%;
 }
 
-/* line 10, ../sass/theme/_about.scss */
+/* line 10, ../sass/components/_about.scss */
 .about__portait, .about__me {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* line 16, ../sass/theme/_about.scss */
+/* line 16, ../sass/components/_about.scss */
 .about__me {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 15px;
 }
 @media (min-width: 959px) {
-  /* line 16, ../sass/theme/_about.scss */
+  /* line 16, ../sass/components/_about.scss */
   .about__me {
     margin: 0;
   }
 }
 
-/* line 25, ../sass/theme/_about.scss */
+/* line 25, ../sass/components/_about.scss */
 .about__portait {
   width: 100%;
   padding: 0;
 }
 
-/* line 30, ../sass/theme/_about.scss */
+/* line 30, ../sass/components/_about.scss */
 .about__portrait-container {
   padding-bottom: 100%;
 }
 
-/* line 34, ../sass/theme/_about.scss */
+/* line 34, ../sass/components/_about.scss */
 .about__portrait-byline {
   padding-left: 20px;
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -351,7 +363,7 @@ p {
   z-index: 2;
 }
 
-/* line 43, ../sass/theme/_about.scss */
+/* line 43, ../sass/components/_about.scss */
 .about__intro {
   max-width: 600px;
   margin: auto;
@@ -359,17 +371,19 @@ p {
   text-align: left;
 }
 
-/* line 1, ../sass/theme/_footer.scss */
+/* line 1, ../sass/components/_footer.scss */
 .footer {
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   margin: auto;
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.5em;
+  text-align: center;
 }
 
-/* line 10, ../sass/theme/_footer.scss */
+/* line 11, ../sass/components/_footer.scss */
 .copyright {
   display: block;
   font-size: .75em;
@@ -377,26 +391,82 @@ p {
   margin: 30px auto 5px;
 }
 
-/* line 16, ../sass/theme/_footer.scss */
+/* line 17, ../sass/components/_footer.scss */
 .social {
   padding-bottom: 100px;
 }
 
-/* line 19, ../sass/theme/_footer.scss */
+/* line 20, ../sass/components/_footer.scss */
 .social__icon {
   display: inline-block;
   height: 60px;
 }
-/* line 22, ../sass/theme/_footer.scss */
+/* line 23, ../sass/components/_footer.scss */
 .social__icon img {
   width: 20px;
 }
-/* line 25, ../sass/theme/_footer.scss */
+/* line 26, ../sass/components/_footer.scss */
 .social__icon .icon-facebook, .social__icon .icon-twitter, .social__icon .icon-youtube, .social__icon .icon-vimeo, .social__icon .icon-instagram {
   background: none;
   display: inline-block;
   padding: 30px 10px;
   margin: 0;
+}
+
+/* line 6, ../sass/components/_projects.scss */
+.section__projects {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 10, ../sass/components/_projects.scss */
+.project__card {
+  padding-bottom: 2em;
+}
+
+/* line 17, ../sass/components/_projects.scss */
+.project__title {
+  color: #00ADEF;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  padding-bottom: 15px;
+}
+
+/* line 23, ../sass/components/_projects.scss */
+.project__description {
+  color: #f1f1f1;
+  font-size: .9em;
+  line-height: 1.2em;
+  padding-bottom: 10px;
+}
+
+/* line 29, ../sass/components/_projects.scss */
+.project__role, .project__tools {
+  font-size: .75em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #898989;
+  padding-bottom: 10px;
+}
+
+/* line 36, ../sass/components/_projects.scss */
+.project__tools {
+  padding-bottom: 15px;
+}
+
+/* line 39, ../sass/components/_projects.scss */
+.project__cta {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px;
+  background: #00ADEF;
+  font-size: .66em;
+}
+/* line 45, ../sass/components/_projects.scss */
+.project__cta .project__link {
+  color: #f1f1f1;
+  text-decoration: none;
 }
 
 /* line 1, ../sass/modules/_cta.scss */
@@ -426,7 +496,7 @@ p {
 /* line 22, ../sass/modules/_cta.scss */
 .cta:hover {
   color: #45B649;
-  background: #0f0f0f;
+  background: #898989;
 }
 
 /* line 26, ../sass/modules/_cta.scss */
@@ -644,4 +714,77 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* line 1, ../sass/base/components/_hero.scss */
+.hero {
+  min-height: 600px;
+  background: #00ADEF;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* line 7, ../sass/base/components/_hero.scss */
+.hero .hero__headline {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 3em;
+  padding: .5em;
+  color: #fff;
+}
+
+/* line 2, ../sass/base/components/_main-content.scss */
+.main-content .main-content__margins {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+/* line 7, ../sass/base/components/_main-content.scss */
+.main-content .main-content__headline {
+  font-size: 2em;
+  line-height: 1.25em;
+  padding-bottom: 1em;
+  color: #00ADEF;
+}
+/* line 13, ../sass/base/components/_main-content.scss */
+.main-content .main-content__button {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em 1.5em;
+  margin: 1em 0 2em;
+  border: 3px solid #00ADEF;
+  text-decoration: none;
+  background-color: #00ADEF;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 25, ../sass/base/components/_main-content.scss */
+.main-content .content--inverted {
+  padding: 2em 0;
+  margin: 2em 0;
+  background: #00ADEF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 30, ../sass/base/components/_main-content.scss */
+.main-content .content--inverted .main-content__headline,
+.main-content .content--inverted .main-content__subhead,
+.main-content .content--inverted .main-content__paragraph,
+.main-content .content--inverted .main-content__lead-paragraph {
+  color: #fff;
+}
+/* line 36, ../sass/base/components/_main-content.scss */
+.main-content .content--inverted .main-content__button {
+  background: #fff;
+  color: #00ADEF;
+}
+
+/* line 8, ../sass/base/base.scss */
+body {
+  font-size: 16px;
+  font-family: sans-serif;
 }

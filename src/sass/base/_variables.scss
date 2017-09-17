@@ -1,0 +1,18 @@
+$blue: #00ADEF;
+$gray: #898989;
+
+@mixin sans { 
+  font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@mixin codaFont {
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@mixin smoothText {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,12 +1,13 @@
 .footer {
+    @include codaFont;
 	width: 100%;
 	margin: auto;
 	color: #fff;
 	letter-spacing:1px;
 	text-transform: uppercase;
 	line-height: 1.5em;
+    text-align:center;
 }
-
 .copyright {
 	display:block;
     font-size: .75em; 
