@@ -1,6 +1,6 @@
 .hero {
    min-height: 600px;
-   background: $blue;
+   background: rgba(69,182,73,.8);
    margin-bottom: 30px;    
    @include flexCenter;
    position: relative;

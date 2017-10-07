@@ -163,7 +163,7 @@ html {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #00ADEF;
+  color: #45B649;
   padding-bottom: 1em;
 }
 
@@ -176,7 +176,7 @@ html {
 }
 /* line 31, ../sass/components/_typography.scss */
 .main-content__paragraph a, .main-content__lead-paragraph a {
-  color: #00ADEF;
+  color: #45B649;
   text-decoration: none;
 }
 
@@ -419,12 +419,27 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 10, ../sass/components/_projects.scss */
-.project__card {
+/* line 11, ../sass/components/_projects.scss */
+.project__card, .section__skills {
   padding-bottom: 2em;
+  vertical-align: top;
+}
+@media (min-width: 640px) {
+  /* line 11, ../sass/components/_projects.scss */
+  .project__card, .section__skills {
+    display: inline-block;
+    width: 45%;
+    margin-right: 4%;
+  }
 }
 
-/* line 17, ../sass/components/_projects.scss */
+/* line 20, ../sass/components/_projects.scss */
+.project__featured-image {
+  max-width: 100%;
+  padding-bottom: 15px;
+}
+
+/* line 28, ../sass/components/_projects.scss */
 .project__title {
   color: #00ADEF;
   letter-spacing: 1px;
@@ -432,7 +447,7 @@ html {
   padding-bottom: 15px;
 }
 
-/* line 23, ../sass/components/_projects.scss */
+/* line 34, ../sass/components/_projects.scss */
 .project__description {
   color: #f1f1f1;
   font-size: .9em;
@@ -440,7 +455,7 @@ html {
   padding-bottom: 10px;
 }
 
-/* line 29, ../sass/components/_projects.scss */
+/* line 40, ../sass/components/_projects.scss */
 .project__role, .project__tools {
   font-size: .75em;
   letter-spacing: 1px;
@@ -449,12 +464,12 @@ html {
   padding-bottom: 10px;
 }
 
-/* line 36, ../sass/components/_projects.scss */
+/* line 47, ../sass/components/_projects.scss */
 .project__tools {
   padding-bottom: 15px;
 }
 
-/* line 39, ../sass/components/_projects.scss */
+/* line 50, ../sass/components/_projects.scss */
 .project__cta {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -463,7 +478,7 @@ html {
   background: #00ADEF;
   font-size: .66em;
 }
-/* line 45, ../sass/components/_projects.scss */
+/* line 56, ../sass/components/_projects.scss */
 .project__cta .project__link {
   color: #f1f1f1;
   text-decoration: none;
@@ -719,7 +734,7 @@ body, html {
 /* line 1, ../sass/base/components/_hero.scss */
 .hero {
   min-height: 600px;
-  background: #00ADEF;
+  background: rgba(69, 182, 73, 0.8);
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -746,7 +761,7 @@ body, html {
   font-size: 2em;
   line-height: 1.25em;
   padding-bottom: 1em;
-  color: #00ADEF;
+  color: #45B649;
 }
 /* line 13, ../sass/base/components/_main-content.scss */
 .main-content .main-content__button {
@@ -755,9 +770,9 @@ body, html {
   font-size: 1.5em;
   padding: 1em 1.5em;
   margin: 1em 0 2em;
-  border: 3px solid #00ADEF;
+  border: 3px solid #45B649;
   text-decoration: none;
-  background-color: #00ADEF;
+  background-color: #45B649;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -766,7 +781,7 @@ body, html {
 .main-content .content--inverted {
   padding: 2em 0;
   margin: 2em 0;
-  background: #00ADEF;
+  background: #45B649;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -780,7 +795,7 @@ body, html {
 /* line 36, ../sass/base/components/_main-content.scss */
 .main-content .content--inverted .main-content__button {
   background: #fff;
-  color: #00ADEF;
+  color: #45B649;
 }
 
 /* line 8, ../sass/base/base.scss */

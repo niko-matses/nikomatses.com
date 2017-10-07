@@ -6,9 +6,20 @@
 .section__projects {
    @include smoothText;
 }
+
 .main-content__headline {}
-.project__card {
-   padding-bottom: 2em;
+.project__card, .section__skills {
+  padding-bottom: 2em;
+	vertical-align: top;
+	@media (min-width: 640px) {
+			display: inline-block;
+			width: 45%;
+			margin-right: 4%;
+	}
+}
+.project__featured-image {
+	max-width: 100%;
+	padding-bottom: 15px;
 }
 .project__label {
    

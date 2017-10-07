@@ -8,7 +8,7 @@
       font-size: 2em;
       line-height: 1.25em;
       padding-bottom: 1em;
-      color: $blue;
+      color: $green;
     }
     .main-content__button {
         display: block;
@@ -16,16 +16,16 @@
         font-size: 1.5em;
         padding: 1em 1.5em;
         margin: 1em 0 2em;
-        border: 3px solid $blue;
+        border: 3px solid $green;
         text-decoration: none;
-        background-color: $blue;
+        background-color: $green;
         color: #fff;
         @include smoothText;
   }
   .content--inverted {
       padding: 2em 0;
       margin: 2em 0;
-      background: $blue;
+      background: $green;
       @include smoothText;
         .main-content__headline,
         .main-content__subhead,
@@ -35,7 +35,7 @@
         }
         .main-content__button {
           background: #fff;
-          color: $blue;
+          color: $green;
         }
     }
 }
