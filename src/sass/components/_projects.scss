@@ -2,14 +2,20 @@
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-
 .section__projects {
    @include smoothText;
 }
 
 .main-content__headline {}
+
+.project__card {
+	background-color: $white;
+	border: 15px solid $white;
+	@include smoothText;
+}
+
 .project__card, .section__skills {
-  padding-bottom: 2em;
+  margin-bottom: 4%;
 	vertical-align: top;
 	@media (min-width: 640px) {
 			display: inline-block;
@@ -22,39 +28,50 @@
 	padding-bottom: 15px;
 }
 .project__label {
-   
+   display: block;
 }
 .project__details {}
 .project__title {
-   color: $blue;
-   letter-spacing: 1px;
-   font-size: 1.25em;
+   @include codaFont;
+   color: $green;
+   letter-spacing: .025em;
+   font-size: 1.5em;
    padding-bottom: 15px;
 }
-.project__description {
-   color: $white;
-   font-size: .9em;
-   line-height: 1.2em;
-   padding-bottom: 10px;
+.project__description {	
+	 @include codaFont;
+	 font-size: 1.25em;
+   line-height: 1.5;
+   margin-bottom: 30px;
 }
 .project__role, .project__tools {
-   font-size: .75em;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   color: $gray;
-   padding-bottom: 10px;
+	@include codaFont;
+	display: inline-block;
+  font-size: .75em;
+	line-height: 1.5;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  background: $ltgray; 
+	padding: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
 .project__tools {
-   padding-bottom: 15px;
+   margin-bottom: 15px;
 }
 .project__cta {
    @include capSpace;
-   display: inline-block;
-   padding: 10px;
-   background: $blue;
-   font-size: .66em;   
+   @include codaFont;
+	 text-align: center;
+	 background: $gray;
    .project__link {
+		  display: block;
+   		padding: 20px;
+   		font-size: .85em;
       color: $white;
       text-decoration: none;
    }
+	 &:hover {
+		background: $green;
+	 }
 }

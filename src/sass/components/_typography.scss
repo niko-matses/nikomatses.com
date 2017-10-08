@@ -3,11 +3,11 @@ html {
     font-size: 16px;
 }
 .main-content__headline, .main-content__subhead {
-  @include sans;
+	@include codaFont;
   @include smoothText;
 }
 .main-content__lead-paragraph, .main-content__paragraph {
-  @include sans;
+	@include codaFont;
   @include smoothText;
 }
 .main-content__headline {

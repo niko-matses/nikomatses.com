@@ -1,13 +1,21 @@
-.hero {
-   min-height: 600px;
-   background: rgba(69,182,73,.8);
-   margin-bottom: 30px;    
+.hero {	
+   min-height: 700px;   
    @include flexCenter;
    position: relative;
     .hero__headline {
       @include smoothText;
-      font-size: 3em;
+      @include sans;
+			font-size: 3em;
       padding: .5em;
       color: #fff;
     }
+	.hero__content {}
+}
+
+.hero__bg-image--chalkboard { 
+		background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
+		background-repeat:no-repeat;
+		background-position: 20% 80%;
+		background-size:cover;
+		background-attachment:fixed;
 }

@@ -1,7 +1,9 @@
 .footer {
-    @include codaFont;
+  @include codaFont;
 	width: 100%;
 	margin: auto;
+	padding: 60px 15px;
+	background: $green;
 	color: #fff;
 	letter-spacing:1px;
 	text-transform: uppercase;
@@ -15,7 +17,7 @@
 	margin: 30px auto 5px ;
 }
 .social {
-    padding-bottom: 100px;
+
 }
 .social__icon {
   display: inline-block;

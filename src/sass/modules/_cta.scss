@@ -5,14 +5,14 @@
 	font-size: 16px;
 	display:block;
 	padding: 15px 30px;
-	color:$white;
+	color:$green;
 	text-decoration: none;
 	text-transform:uppercase;
 	letter-spacing: 1px;
     transition: background-color 0.3s ease,
                 color 0.3s ease;
     margin: 50px auto 0;
-    background: $green;
+    background: $white;
 }
 .anchor {
   visibility:hidden;
@@ -20,8 +20,8 @@
   margin: 0;    
 }
 .cta:hover {
-	color: $green;
-	background: $gray;	
+	color: $white;
+	background: $green;	
 }
 .contact__cta {
   display: inline-block;
