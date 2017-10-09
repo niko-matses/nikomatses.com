@@ -193,17 +193,25 @@ html {
 
 /* line 1, ../sass/components/_nav.scss */
 .nav {
-  position: fixed;
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
   right: 0;
   width: 100%;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 15px;
+  color: #fff;
+  background: #45B649;
+  z-index: 3;
 }
 
-/* line 6, ../sass/components/_nav.scss */
+/* line 14, ../sass/components/_nav.scss */
 .nav__menu {
   text-align: right;
 }
 
-/* line 9, ../sass/components/_nav.scss */
+/* line 17, ../sass/components/_nav.scss */
 .nav__menu-item {
   color: #f9f9f9;
   display: inline-block;
@@ -214,14 +222,14 @@ html {
   letter-spacing: 1px;
 }
 @media (min-width: 640px) {
-  /* line 9, ../sass/components/_nav.scss */
+  /* line 17, ../sass/components/_nav.scss */
   .nav__menu-item {
     padding: 30px;
     font-size: 1em;
   }
 }
 
-/* line 22, ../sass/components/_nav.scss */
+/* line 30, ../sass/components/_nav.scss */
 .nav__menu-link {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -229,12 +237,12 @@ html {
   text-decoration: none;
   transition: color .3s;
 }
-/* line 27, ../sass/components/_nav.scss */
+/* line 35, ../sass/components/_nav.scss */
 .nav__menu-link:hover {
   color: #fff !important;
 }
 
-/* line 32, ../sass/components/_nav.scss */
+/* line 40, ../sass/components/_nav.scss */
 .nav__menu-item--logo {
   position: relative;
   display: inline;
@@ -402,18 +410,17 @@ html {
 /* line 11, ../sass/components/_projects.scss */
 .project__card {
   background-color: #f9f9f9;
-  border: 15px solid #f9f9f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 17, ../sass/components/_projects.scss */
+/* line 16, ../sass/components/_projects.scss */
 .project__card, .section__skills {
   margin-bottom: 4%;
   vertical-align: top;
 }
 @media (min-width: 640px) {
-  /* line 17, ../sass/components/_projects.scss */
+  /* line 16, ../sass/components/_projects.scss */
   .project__card, .section__skills {
     display: inline-block;
     width: 45%;
@@ -421,35 +428,41 @@ html {
   }
 }
 
-/* line 26, ../sass/components/_projects.scss */
+/* line 25, ../sass/components/_projects.scss */
 .project__featured-image {
   max-width: 100%;
-  padding-bottom: 15px;
 }
 
-/* line 30, ../sass/components/_projects.scss */
+/* line 28, ../sass/components/_projects.scss */
 .project__label {
   display: block;
+}
+
+/* line 31, ../sass/components/_projects.scss */
+.project__details {
+  padding: 15px;
 }
 
 /* line 34, ../sass/components/_projects.scss */
 .project__title {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #45B649;
-  letter-spacing: .025em;
+  letter-spacing: .01em;
   font-size: 1.5em;
   padding-bottom: 15px;
+  font-weight: normal;
 }
 
-/* line 41, ../sass/components/_projects.scss */
+/* line 42, ../sass/components/_projects.scss */
 .project__description {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.25em;
-  line-height: 1.5;
+  line-height: 1.25;
+  letter-spacing: .025em;
+  color: #898989;
   margin-bottom: 30px;
 }
 
-/* line 47, ../sass/components/_projects.scss */
+/* line 49, ../sass/components/_projects.scss */
 .project__role, .project__tools {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
@@ -457,43 +470,65 @@ html {
   line-height: 1.5;
   letter-spacing: .075em;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #898989;
   background: #ebebeb;
   padding: 10px;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
-/* line 59, ../sass/components/_projects.scss */
+/* line 62, ../sass/components/_projects.scss */
 .project__tools {
   margin-bottom: 15px;
 }
 
-/* line 62, ../sass/components/_projects.scss */
+/* line 65, ../sass/components/_projects.scss */
 .project__cta {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  background: #898989;
+  background: #f9f9f9;
 }
-/* line 67, ../sass/components/_projects.scss */
+/* line 70, ../sass/components/_projects.scss */
 .project__cta .project__link {
   display: block;
-  padding: 20px;
-  font-size: .85em;
-  color: #f9f9f9;
+  padding: 10px;
+  font-size: .75em;
+  line-height: 1.5;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  color: #45B649;
   text-decoration: none;
 }
-/* line 74, ../sass/components/_projects.scss */
+/* line 79, ../sass/components/_projects.scss */
+.project__cta .project__link:hover {
+  color: #fff;
+  transition: color .3s;
+}
+/* line 84, ../sass/components/_projects.scss */
 .project__cta:hover {
   background: #45B649;
+  transition: background .3s;
+}
+/* line 88, ../sass/components/_projects.scss */
+.project__cta:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  top: -20px;
+  right: 10px;
+  float: right;
+  color: #f9f9f9;
+  font-size: 1.75em;
+  line-height: 0;
+  content: '\261B';
 }
 
 /* line 1, ../sass/modules/_cta.scss */
 .cta {
   width: 50%;
   max-width: 300px;
-  font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   display: block;
   padding: 15px 30px;
@@ -504,22 +539,23 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 50px auto 0;
   background: #f9f9f9;
+  border: 1px solid #f9f9f9;
 }
 
-/* line 17, ../sass/modules/_cta.scss */
+/* line 18, ../sass/modules/_cta.scss */
 .anchor {
   visibility: hidden;
   padding-top: 100px;
   margin: 0;
 }
 
-/* line 22, ../sass/modules/_cta.scss */
+/* line 23, ../sass/modules/_cta.scss */
 .cta:hover {
   color: #f9f9f9;
   background: #45B649;
 }
 
-/* line 26, ../sass/modules/_cta.scss */
+/* line 27, ../sass/modules/_cta.scss */
 .contact__cta {
   display: inline-block;
   margin: 15px;
@@ -738,29 +774,59 @@ body, html {
 
 /* line 1, ../sass/base/components/_hero.scss */
 .hero {
-  min-height: 700px;
+  height: 700px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-/* line 5, ../sass/base/components/_hero.scss */
+/* line 6, ../sass/base/components/_hero.scss */
 .hero .hero__headline {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "rinse","Averia Sans Libre","Arial",sans-serif;
+  z-index: 2;
   font-size: 3em;
-  padding: .5em;
+  padding: 1em;
+  text-shadow: 3px 3px #000;
   color: #fff;
+  max-width: 1920px;
+}
+@media (min-width: 960px) {
+  /* line 6, ../sass/base/components/_hero.scss */
+  .hero .hero__headline {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 1920px) {
+  /* line 6, ../sass/base/components/_hero.scss */
+  .hero .hero__headline {
+    font-size: 5em;
+  }
+}
+/* line 22, ../sass/base/components/_hero.scss */
+.hero .hero__overlay {
+  background-color: rgba(69, 182, 73, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 15, ../sass/base/components/_hero.scss */
+/* line 32, ../sass/base/components/_hero.scss */
 .hero__bg-image--chalkboard {
   background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
   background-repeat: no-repeat;
   background-position: 20% 80%;
   background-size: cover;
-  background-attachment: fixed;
+}
+@media (min-width: 960px) {
+  /* line 32, ../sass/base/components/_hero.scss */
+  .hero__bg-image--chalkboard {
+    background-attachment: fixed;
+  }
 }
 
 /* line 2, ../sass/base/components/_main-content.scss */

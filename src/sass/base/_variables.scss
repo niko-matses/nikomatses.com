@@ -1,6 +1,10 @@
 $blue: #00ADEF;
 $gray: #898989;
 
+@mixin serif {
+   font-family: "rinse","Averia Sans Libre","Arial",sans-serif;
+}
+
 @mixin sans { 
   font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

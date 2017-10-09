@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>Niko Matses - UX Designer / Web Developer - Boston, MA</title>
+<script src="https://use.typekit.net/qbp5vqk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>   
+<link href="css/pres/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="css/pres/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+  <link href="stylesheets/pres/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script src="js/modernizr.custom.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75336473-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>    
+<div id="wrapper">
+    <div id="bg-container"></div>    
+</div>
+   <nav class="nav">
+      <ul class="nav__menu">
+         <li class="nav__menu-item nav__menu-item--logo" style="display: block"><a class="nav__menu-link" href="#home">NIKO MATSES</a></li>            
+         <li class="nav__menu-item"><a class="nav__menu-link" href="#about">About</a></li>         
+         <li class="nav__menu-item"><a class="nav__menu-link" href="resume.html">Resume</a></li>
+         <li class="nav__menu-item"><a class="nav__menu-link" href="#contact">Contact</a></li>
+      </ul>
+   </nav>
+<header class="header" id="home">
+  <section class="header__intro">
+    <div id="cbp-so-scroller" class="cbp-so-scroller">
+        <h1 id="header__name" class="tk-rinse">Niko Matses</h1>
+        <h1 id="header__title" class="tk-rinse">UX Designer &amp; Web Developer</h1>
+        <h2 id="header__name" class="tk-rinse">Boston, MA</h2>
+        <a class="cta" href="#about">Learn More</a>
+     </div>
+  </section>
+</header>
+
+<div id="main__gradient-in"></div> 
+<main id="main">
+    <section id="about" name="about" class="about__container">	
+			<div id="cbp-so-scroller" class="cbp-so-scroller">
+				<section class="cbp-so-section">
+					<figure class="cbp-so-side cbp-so-side-left">
+						<img src="img/niko-matses-portrait.jpg" alt="Portriat of Niko Matses">
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+                        <article class="about__me">
+
+                            <h2  class="tk-rinse">About</h2>     
+                               <p class="about__intro">Boston-based UX designer, developer, and motion designer seeking collaborators for short film and music video projects. I've worked seven years semi-professionally as a photographer, camera operator, editor, director and producer - with a professional career as a front-end web developer.</p>
+                               <p class="about__intro">I have a passion for music, art, design and cinematography. I'm constantly interested in discussing new and exciting creative projects. If you think you might like to collaborate on a short film, music video, documentary or event, let's talk shop!</p>
+        <a href="#contact" class="cta">Contact</a>
+                      </article>		
+				</article>
+			</section>
+		</div>
+    </section>   
+  <section id="showreel" name="showreel">
+	<div class='embed-container'><iframe src='https://player.vimeo.com/video/131066298?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+	<a class="cta" href="#about">About</a>
+   </section>
+</main>
+<div id="main__gradient-out"></div>    
+    
+<footer class="footer">
+  <section id="contact" name="contact">
+    <h2 class="tk-rinse">Contact</h2>
+	<a class="cta contact__cta" href="tel:9782890008">Call</a>
+	<a class="cta contact__cta" href="mailto:gigs@nikomatses.com">Email</a>
+    <span class="copyright">&copy;2017 Niko Matses /  978.289.0008 / gigs@nikomatses.com</span>
+  </section>
+    <ul class="social">
+      <li class="social__icon"><a class="icon-facebook" target="_blank" href="https://www.facebook.com/niko.matses">
+          <img src="img/icons/icon-facebook.svg">
+      </a></li>
+      <li class="social__icon"><a class="icon-twitter" target="_blank" href="https://twitter.com/Nik0media">
+          <img src="img/icons/icon-twitter.svg">
+      </a></li>
+      <li class="social__icon"><a class="icon-vimeo" target="_blank" href="https://vimeo.com/nikomedia">
+          <img src="img/icons/icon-vimeo.svg">
+      </a></li>   
+      <li class="social__icon"><a class="icon-youtube" target="_blank" href="https://www.youtube.com/channel/UCASgBK81dWMQEzc10iE9eyA">
+          <img src="img/icons/icon-youtube.svg">
+      </a></li> 
+      <li class="social__icon"><a class="icon-instagram" target="_blank" href="https://www.instagram.com/nik0media">
+          <img src="img/icons/icon-instagram.svg">
+      </a></li>   
+    </ul>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+        var $root = $('html, body');
+        $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+    </script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpScroller.js"></script>
+    <script>
+        new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+    </script>    
+</html>

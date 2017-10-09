@@ -1,15 +1,32 @@
 .hero {	
-   min-height: 700px;   
+   height: 700px; 
+   width: 100%;
    @include flexCenter;
    position: relative;
     .hero__headline {
       @include smoothText;
-      @include sans;
-			font-size: 3em;
-      padding: .5em;
+      @include serif;
+      z-index: 2;
+      font-size: 3em;
+      padding: 1em;
+      text-shadow: 3px 3px #000;
       color: #fff;
+      max-width: 1920px;
+       	@media (min-width: 960px) {
+         font-size: 5vw;
+       }
+       @media (min-width: 1920px) {
+         font-size: 5em;
+       }       
     }
-	.hero__content {}
+   .hero__overlay {
+       background-color: rgba(69, 182, 73, 0.1);
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+   }
 }
 
 .hero__bg-image--chalkboard { 
@@ -17,5 +34,8 @@
 		background-repeat:no-repeat;
 		background-position: 20% 80%;
 		background-size:cover;
-		background-attachment:fixed;
+        @media (min-width: 960px) {
+           background-attachment:fixed;
+       }
+
 }

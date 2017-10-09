@@ -1,7 +1,15 @@
 .nav {
-   position: fixed;
+   @include codaFont;
+   text-align: center;
    right: 0;
    width: 100%;
+   font-size: 1.25em;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   padding: 15px;
+   color: #fff;
+   background: $green;
+   z-index: 3;
 }
 .nav__menu {
    text-align: right;

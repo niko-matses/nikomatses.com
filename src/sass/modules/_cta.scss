@@ -1,7 +1,7 @@
 .cta {
 	width: 50%;
 	max-width: 300px;
-	font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;   
+	@include codaFont;
 	font-size: 16px;
 	display:block;
 	padding: 15px 30px;
@@ -13,6 +13,7 @@
                 color 0.3s ease;
     margin: 50px auto 0;
     background: $white;
+    border: 1px solid $white;
 }
 .anchor {
   visibility:hidden;

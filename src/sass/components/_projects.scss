@@ -10,7 +10,6 @@
 
 .project__card {
 	background-color: $white;
-	border: 15px solid $white;
 	@include smoothText;
 }
 
@@ -25,36 +24,40 @@
 }
 .project__featured-image {
 	max-width: 100%;
-	padding-bottom: 15px;
 }
 .project__label {
    display: block;
 }
-.project__details {}
+.project__details {
+   padding: 15px;
+}
 .project__title {
    @include codaFont;
    color: $green;
-   letter-spacing: .025em;
+   letter-spacing: .01em;
    font-size: 1.5em;
    padding-bottom: 15px;
+   font-weight: normal;
 }
 .project__description {	
-	 @include codaFont;
-	 font-size: 1.25em;
-   line-height: 1.5;
+   @include codaFont;
+   line-height: 1.25;
+   letter-spacing: .025em;
+   color: $gray;
    margin-bottom: 30px;
 }
 .project__role, .project__tools {
-	@include codaFont;
-	display: inline-block;
-  font-size: .75em;
-	line-height: 1.5;
-  letter-spacing: .075em;
-  text-transform: uppercase;
-  background: $ltgray; 
-	padding: 10px;
-	margin-bottom: 10px;
-	font-weight: bold;
+   @include codaFont;
+   display: inline-block;
+   font-size: .75em;
+   line-height: 1.5;
+   letter-spacing: .075em;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: $gray;
+   background: $ltgray; 
+   padding: 10px;
+   margin-bottom: 10px;
 }
 .project__tools {
    margin-bottom: 15px;
@@ -62,16 +65,35 @@
 .project__cta {
    @include capSpace;
    @include codaFont;
-	 text-align: center;
-	 background: $gray;
+   //text-align: center;
+   background: $white;
    .project__link {
-		  display: block;
-   		padding: 20px;
-   		font-size: .85em;
-      color: $white;
+      display: block;
+      padding: 10px;
+      font-size: .75em;
+      line-height: 1.5;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+      color: $green;
       text-decoration: none;
+	  &:hover {
+		color: #fff;
+        transition: color .3s;
+	  }      
    }
 	 &:hover {
 		background: $green;
+        transition: background .3s;
 	 }
+   &:after {
+      @include smoothText;
+      position: relative;
+      top: -20px;
+      right: 10px;
+      float: right;
+      color: $white;
+      font-size: 1.75em;
+      line-height: 0;
+      content: '\261B';
+   }
 }
