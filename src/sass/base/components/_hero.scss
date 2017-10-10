@@ -1,5 +1,5 @@
 .hero {	
-   height: 700px; 
+   height: 100vh; 
    width: 100%;
    @include flexCenter;
    position: relative;
@@ -11,28 +11,35 @@
       padding: 1em;
       text-shadow: 3px 3px #000;
       color: #fff;
-      max-width: 1920px;
-       	@media (min-width: 960px) {
-         font-size: 5vw;
-       }
-       @media (min-width: 1920px) {
-         font-size: 5em;
-       }       
+      max-width: 1920px;    
     }
    .hero__overlay {
-       background-color: rgba(69, 182, 73, 0.1);
+       //background-color: rgba(69, 182, 73, 0.1);
        position: absolute;
        top: 0;
        left: 0;
        width: 100%;
        height: 100%;
    }
+   @media (min-width: 960px) {
+      height: 700px;
+   }
+   @media (min-width: 960px) {
+      .hero__headline {
+         font-size: 5vw;
+      }
+   }
+   @media (min-width: 1920px) {
+       .hero__headline {
+          font-size: 5em;
+       }   
+   }
 }
 
 .hero__bg-image--chalkboard { 
-		background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
+		background: #111 url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
 		background-repeat:no-repeat;
-		background-position: 20% 80%;
+		background-position: 20% 100%;
 		background-size:cover;
         @media (min-width: 960px) {
            background-attachment:fixed;

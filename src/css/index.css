@@ -561,6 +561,43 @@ html {
   margin: 15px;
 }
 
+/* line 1, ../sass/modules/_animate.scss */
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+/* line 9, ../sass/modules/_animate.scss */
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+/* line 19, ../sass/modules/_animate.scss */
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+/* line 24, ../sass/modules/_animate.scss */
+.ml11 .letter {
+  display: inline-block;
+}
+
+@media (min-width: 960px) {
+  /* line 29, ../sass/modules/_animate.scss */
+  .ml12 .letter {
+    display: inline-block;
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -606,47 +643,47 @@ html {
   }
 }
 /* fade on scroll */
-/* line 31, ../sass/modules/_animate.scss */
+/* line 64, ../sass/modules/_animate.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 32, ../sass/modules/_animate.scss */
+/* line 65, ../sass/modules/_animate.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 34, ../sass/modules/_animate.scss */
+/* line 67, ../sass/modules/_animate.scss */
 .cbp-so-scroller {
   margin-top: 3em;
   overflow: hidden;
 }
 
-/* line 39, ../sass/modules/_animate.scss */
+/* line 72, ../sass/modules/_animate.scss */
 .cbp-so-section {
   margin-bottom: 15em;
 }
 
 /* Clear floats of children */
-/* line 44, ../sass/modules/_animate.scss */
+/* line 77, ../sass/modules/_animate.scss */
 .cbp-so-section:before,
 .cbp-so-section:after {
   content: " ";
   display: table;
 }
 
-/* line 50, ../sass/modules/_animate.scss */
+/* line 83, ../sass/modules/_animate.scss */
 .cbp-so-section:after {
   clear: both;
 }
 
 /* Text styling */
 /* Sides */
-/* line 60, ../sass/modules/_animate.scss */
+/* line 93, ../sass/modules/_animate.scss */
 .cbp-so-side {
   width: 50%;
   float: left;
@@ -660,53 +697,53 @@ body, html {
 }
 
 /* Clear floats of children */
-/* line 73, ../sass/modules/_animate.scss */
+/* line 106, ../sass/modules/_animate.scss */
 .cbp-so-side:before,
 .cbp-so-side:after {
   content: " ";
   display: table;
 }
 
-/* line 79, ../sass/modules/_animate.scss */
+/* line 112, ../sass/modules/_animate.scss */
 .cbp-so-side:after {
   clear: both;
 }
 
 @media (min-width: 959px) {
-  /* line 85, ../sass/modules/_animate.scss */
+  /* line 118, ../sass/modules/_animate.scss */
   .cbp-so-side-right {
     text-align: left;
   }
 
-  /* line 89, ../sass/modules/_animate.scss */
+  /* line 122, ../sass/modules/_animate.scss */
   .cbp-so-side-left {
     text-align: right;
   }
 
-  /* line 93, ../sass/modules/_animate.scss */
+  /* line 126, ../sass/modules/_animate.scss */
   .cbp-so-side-right img {
     float: left;
   }
 
-  /* line 97, ../sass/modules/_animate.scss */
+  /* line 130, ../sass/modules/_animate.scss */
   .cbp-so-side-left img {
     float: right;
   }
 }
 /* Initial state (hidden or anything else) */
-/* line 103, ../sass/modules/_animate.scss */
+/* line 136, ../sass/modules/_animate.scss */
 .cbp-so-init .cbp-so-side {
   opacity: 0;
 }
 
-/* line 107, ../sass/modules/_animate.scss */
+/* line 140, ../sass/modules/_animate.scss */
 .cbp-so-init .cbp-so-side-left {
   -webkit-transform: translateX(-80px);
   -moz-transform: translateX(-80px);
   transform: translateX(-80px);
 }
 
-/* line 113, ../sass/modules/_animate.scss */
+/* line 146, ../sass/modules/_animate.scss */
 .cbp-so-init .cbp-so-side-right {
   -webkit-transform: translateX(80px);
   -moz-transform: translateX(80px);
@@ -715,7 +752,7 @@ body, html {
 
 /* Animated state */
 /* add you final states (transition) or your effects (animations) for each side */
-/* line 121, ../sass/modules/_animate.scss */
+/* line 154, ../sass/modules/_animate.scss */
 .cbp-so-section.cbp-so-animate .cbp-so-side-left,
 .cbp-so-section.cbp-so-animate .cbp-so-side-right {
   -webkit-transform: translateX(0px);
@@ -732,24 +769,24 @@ body, html {
 }
 */
 @media screen and (max-width: 960px) {
-  /* line 138, ../sass/modules/_animate.scss */
+  /* line 171, ../sass/modules/_animate.scss */
   .cbp-so-scroller {
     font-size: 80%;
   }
 
-  /* line 142, ../sass/modules/_animate.scss */
+  /* line 175, ../sass/modules/_animate.scss */
   .cbp-so-side img {
     max-width: 120%;
   }
 }
 @media screen and (max-width: 960px) {
-  /* line 148, ../sass/modules/_animate.scss */
+  /* line 181, ../sass/modules/_animate.scss */
   .cbp-so-side {
     float: none;
     width: 100%;
   }
 
-  /* line 153, ../sass/modules/_animate.scss */
+  /* line 186, ../sass/modules/_animate.scss */
   .cbp-so-side img {
     max-width: 100%;
   }
@@ -774,7 +811,7 @@ body, html {
 
 /* line 1, ../sass/base/components/_hero.scss */
 .hero {
-  height: 700px;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -793,37 +830,42 @@ body, html {
   color: #fff;
   max-width: 1920px;
 }
-@media (min-width: 960px) {
-  /* line 6, ../sass/base/components/_hero.scss */
-  .hero .hero__headline {
-    font-size: 5vw;
-  }
-}
-@media (min-width: 1920px) {
-  /* line 6, ../sass/base/components/_hero.scss */
-  .hero .hero__headline {
-    font-size: 5em;
-  }
-}
-/* line 22, ../sass/base/components/_hero.scss */
+/* line 16, ../sass/base/components/_hero.scss */
 .hero .hero__overlay {
-  background-color: rgba(69, 182, 73, 0.1);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+@media (min-width: 960px) {
+  /* line 1, ../sass/base/components/_hero.scss */
+  .hero {
+    height: 700px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 28, ../sass/base/components/_hero.scss */
+  .hero .hero__headline {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 1920px) {
+  /* line 33, ../sass/base/components/_hero.scss */
+  .hero .hero__headline {
+    font-size: 5em;
+  }
+}
 
-/* line 32, ../sass/base/components/_hero.scss */
+/* line 39, ../sass/base/components/_hero.scss */
 .hero__bg-image--chalkboard {
-  background-image: url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
+  background: #111 url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
   background-repeat: no-repeat;
-  background-position: 20% 80%;
+  background-position: 20% 100%;
   background-size: cover;
 }
 @media (min-width: 960px) {
-  /* line 32, ../sass/base/components/_hero.scss */
+  /* line 39, ../sass/base/components/_hero.scss */
   .hero__bg-image--chalkboard {
     background-attachment: fixed;
   }
