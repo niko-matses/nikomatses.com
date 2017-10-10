@@ -18,13 +18,15 @@
 
 .ml11 .line1 { 
   top: 0; 
-  left: 0;
+  left: 0; 
 }
 
 .ml11 .letter {
   display: inline-block;
 }
-
+ .ml12 .letter {
+  opacity: 0;
+}
    @media (min-width: 960px) {
    .ml12 .letter {
       display: inline-block;

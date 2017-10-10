@@ -1,5 +1,5 @@
 .hero {	
-   height: 100vh; 
+   height: 600px; 
    width: 100%;
    @include flexCenter;
    position: relative;
@@ -39,7 +39,7 @@
 .hero__bg-image--chalkboard { 
 		background: #111 url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
 		background-repeat:no-repeat;
-		background-position: 20% 100%;
+		background-position: 20% 75%;
 		background-size:cover;
         @media (min-width: 960px) {
            background-attachment:fixed;

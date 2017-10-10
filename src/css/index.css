@@ -592,8 +592,13 @@ html {
   display: inline-block;
 }
 
+/* line 27, ../sass/modules/_animate.scss */
+.ml12 .letter {
+  opacity: 0;
+}
+
 @media (min-width: 960px) {
-  /* line 29, ../sass/modules/_animate.scss */
+  /* line 31, ../sass/modules/_animate.scss */
   .ml12 .letter {
     display: inline-block;
   }
@@ -643,47 +648,47 @@ html {
   }
 }
 /* fade on scroll */
-/* line 64, ../sass/modules/_animate.scss */
+/* line 66, ../sass/modules/_animate.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 65, ../sass/modules/_animate.scss */
+/* line 67, ../sass/modules/_animate.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 67, ../sass/modules/_animate.scss */
+/* line 69, ../sass/modules/_animate.scss */
 .cbp-so-scroller {
   margin-top: 3em;
   overflow: hidden;
 }
 
-/* line 72, ../sass/modules/_animate.scss */
+/* line 74, ../sass/modules/_animate.scss */
 .cbp-so-section {
   margin-bottom: 15em;
 }
 
 /* Clear floats of children */
-/* line 77, ../sass/modules/_animate.scss */
+/* line 79, ../sass/modules/_animate.scss */
 .cbp-so-section:before,
 .cbp-so-section:after {
   content: " ";
   display: table;
 }
 
-/* line 83, ../sass/modules/_animate.scss */
+/* line 85, ../sass/modules/_animate.scss */
 .cbp-so-section:after {
   clear: both;
 }
 
 /* Text styling */
 /* Sides */
-/* line 93, ../sass/modules/_animate.scss */
+/* line 95, ../sass/modules/_animate.scss */
 .cbp-so-side {
   width: 50%;
   float: left;
@@ -697,53 +702,53 @@ body, html {
 }
 
 /* Clear floats of children */
-/* line 106, ../sass/modules/_animate.scss */
+/* line 108, ../sass/modules/_animate.scss */
 .cbp-so-side:before,
 .cbp-so-side:after {
   content: " ";
   display: table;
 }
 
-/* line 112, ../sass/modules/_animate.scss */
+/* line 114, ../sass/modules/_animate.scss */
 .cbp-so-side:after {
   clear: both;
 }
 
 @media (min-width: 959px) {
-  /* line 118, ../sass/modules/_animate.scss */
+  /* line 120, ../sass/modules/_animate.scss */
   .cbp-so-side-right {
     text-align: left;
   }
 
-  /* line 122, ../sass/modules/_animate.scss */
+  /* line 124, ../sass/modules/_animate.scss */
   .cbp-so-side-left {
     text-align: right;
   }
 
-  /* line 126, ../sass/modules/_animate.scss */
+  /* line 128, ../sass/modules/_animate.scss */
   .cbp-so-side-right img {
     float: left;
   }
 
-  /* line 130, ../sass/modules/_animate.scss */
+  /* line 132, ../sass/modules/_animate.scss */
   .cbp-so-side-left img {
     float: right;
   }
 }
 /* Initial state (hidden or anything else) */
-/* line 136, ../sass/modules/_animate.scss */
+/* line 138, ../sass/modules/_animate.scss */
 .cbp-so-init .cbp-so-side {
   opacity: 0;
 }
 
-/* line 140, ../sass/modules/_animate.scss */
+/* line 142, ../sass/modules/_animate.scss */
 .cbp-so-init .cbp-so-side-left {
   -webkit-transform: translateX(-80px);
   -moz-transform: translateX(-80px);
   transform: translateX(-80px);
 }
 
-/* line 146, ../sass/modules/_animate.scss */
+/* line 148, ../sass/modules/_animate.scss */
 .cbp-so-init .cbp-so-side-right {
   -webkit-transform: translateX(80px);
   -moz-transform: translateX(80px);
@@ -752,7 +757,7 @@ body, html {
 
 /* Animated state */
 /* add you final states (transition) or your effects (animations) for each side */
-/* line 154, ../sass/modules/_animate.scss */
+/* line 156, ../sass/modules/_animate.scss */
 .cbp-so-section.cbp-so-animate .cbp-so-side-left,
 .cbp-so-section.cbp-so-animate .cbp-so-side-right {
   -webkit-transform: translateX(0px);
@@ -769,24 +774,24 @@ body, html {
 }
 */
 @media screen and (max-width: 960px) {
-  /* line 171, ../sass/modules/_animate.scss */
+  /* line 173, ../sass/modules/_animate.scss */
   .cbp-so-scroller {
     font-size: 80%;
   }
 
-  /* line 175, ../sass/modules/_animate.scss */
+  /* line 177, ../sass/modules/_animate.scss */
   .cbp-so-side img {
     max-width: 120%;
   }
 }
 @media screen and (max-width: 960px) {
-  /* line 181, ../sass/modules/_animate.scss */
+  /* line 183, ../sass/modules/_animate.scss */
   .cbp-so-side {
     float: none;
     width: 100%;
   }
 
-  /* line 186, ../sass/modules/_animate.scss */
+  /* line 188, ../sass/modules/_animate.scss */
   .cbp-so-side img {
     max-width: 100%;
   }
@@ -811,7 +816,7 @@ body, html {
 
 /* line 1, ../sass/base/components/_hero.scss */
 .hero {
-  height: 100vh;
+  height: 600px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -861,7 +866,7 @@ body, html {
 .hero__bg-image--chalkboard {
   background: #111 url(../img/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg);
   background-repeat: no-repeat;
-  background-position: 20% 100%;
+  background-position: 20% 75%;
   background-size: cover;
 }
 @media (min-width: 960px) {
