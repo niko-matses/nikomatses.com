@@ -829,20 +829,25 @@ body, html {
   }
 }
 
-/* line 2, ../sass/base/components/_main-content.scss */
+/* line 1, ../sass/base/components/_main-content.scss */
+.section {
+  padding-bottom: 2em;
+}
+
+/* line 5, ../sass/base/components/_main-content.scss */
 .main-content .main-content__margins {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em 1em 0;
 }
-/* line 7, ../sass/base/components/_main-content.scss */
+/* line 10, ../sass/base/components/_main-content.scss */
 .main-content .main-content__headline {
   font-size: 2em;
   line-height: 1.25em;
   padding-bottom: 1em;
   color: #45B649;
 }
-/* line 13, ../sass/base/components/_main-content.scss */
+/* line 16, ../sass/base/components/_main-content.scss */
 .main-content .main-content__button {
   display: block;
   text-align: center;
@@ -856,7 +861,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 25, ../sass/base/components/_main-content.scss */
+/* line 28, ../sass/base/components/_main-content.scss */
 .main-content .content--inverted {
   padding: 2em 0;
   margin: 2em 0;
@@ -864,14 +869,14 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 30, ../sass/base/components/_main-content.scss */
+/* line 33, ../sass/base/components/_main-content.scss */
 .main-content .content--inverted .main-content__headline,
 .main-content .content--inverted .main-content__subhead,
 .main-content .content--inverted .main-content__paragraph,
 .main-content .content--inverted .main-content__lead-paragraph {
   color: #fff;
 }
-/* line 36, ../sass/base/components/_main-content.scss */
+/* line 39, ../sass/base/components/_main-content.scss */
 .main-content .content--inverted .main-content__button {
   background: #fff;
   color: #45B649;
