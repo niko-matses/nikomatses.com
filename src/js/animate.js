@@ -31,7 +31,7 @@ anime.timeline({loop: false})
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 10
   });
 
 // Wrap every letter in a span

@@ -9,7 +9,8 @@
 .main-content__headline {}
 
 .project__card {
-	background-color: $white;
+	background-color: #fff;
+    border: 1px solid $ltgray;
 	@include smoothText;
 }
 
@@ -17,9 +18,9 @@
   margin-bottom: 4%;
 	vertical-align: top;
 	@media (min-width: 640px) {
-			display: inline-block;
-			width: 45%;
-			margin-right: 4%;
+      display: inline-block;
+      width: 45%;
+      margin-right: 4%;
 	}
 }
 .project__featured-image {
@@ -55,7 +56,8 @@
    text-transform: uppercase;
    font-weight: bold;
    color: $gray;
-   background: $ltgray; 
+   background: $white;
+   border: 1px solid $ltgray;
    padding: 10px;
    margin-bottom: 10px;
 }
@@ -65,35 +67,58 @@
 .project__cta {
    @include capSpace;
    @include codaFont;
-   //text-align: center;
-   background: $white;
    .project__link {
       display: block;
-      padding: 10px;
+      padding: 20px;
       font-size: .75em;
-      line-height: 1.5;
+      line-height: 0;
       letter-spacing: .075em;
       text-transform: uppercase;
       color: $green;
       text-decoration: none;
+      z-index: 10; 
 	  &:hover {
 		color: #fff;
         transition: color .3s;
-	  }      
+	  }   
+      &:after {
+         @include smoothText;
+         position: relative;
+         top: -1px; 
+         float: right;
+         color: $white;
+         font-size: 2.5em;
+         line-height: 0;
+         content: '\261B';
+      }      
    }
 	 &:hover {
 		background: $green;
         transition: background .3s;
 	 }
-   &:after {
-      @include smoothText;
-      position: relative;
-      top: -20px;
-      right: 10px;
-      float: right;
-      color: $white;
-      font-size: 1.75em;
-      line-height: 0;
-      content: '\261B';
-   }
+
 }
+/* JQUERY ZOOM */
+
+/* magnifying glass icon */
+.zoom:after {
+   content:'';
+   display:block; 
+   width:33px; 
+   height:33px; 
+   position:absolute; 
+   top:0;
+   right:0;
+   background:url(../img/icons/icon-zoom.png);
+   z-index: 0;
+}
+ 
+.zoom img {
+   display: block;
+   z-index: 1;
+}
+
+.zoom img::selection { background-color: transparent; }
+
+#project__bms img:hover { cursor: url(grab.cur), default; }
+#project__bms img:active { cursor: url(grabbed.cur), default; }
