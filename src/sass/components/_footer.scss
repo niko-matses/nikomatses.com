@@ -13,6 +13,7 @@
 .copyright {
 	display:block;
     font-size: .75em; 
+    letter-spacing: 2px;
 	appearance: normal;
 	margin: 30px auto 5px ;
 }
@@ -25,11 +26,24 @@
   img {
     width: 20px;
   }
-  .icon-facebook, .icon-twitter, .icon-youtube, .icon-vimeo, .icon-instagram {
+  .icon-github, .icon-twitter, .icon-youtube, .icon-vimeo, .icon-instagram {
+    position: relative;
     background: none;
     display: inline-block;
     padding: 30px 10px;
     margin: 0;
+     text-align: center;
+     &:hover:before {
+        position: absolute;
+        bottom: 55px;
+        font-size: .5em; 
+        color: #fff;
+        letter-spacing: 2px;
+     }
   }
 }
-
+.icon-github:hover:before {content: 'GitHub';}
+.icon-twitter:hover:before {content: 'Twitter'}
+.icon-youtube:hover:before {content: 'YouTube'}
+.icon-vimeo:hover:before {content: 'Vimeo'}
+.icon-instagram:hover:before {content: 'Instagram'}

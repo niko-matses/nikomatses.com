@@ -380,25 +380,61 @@ html {
 .copyright {
   display: block;
   font-size: .75em;
+  letter-spacing: 2px;
   appearance: normal;
   margin: 30px auto 5px;
 }
 
-/* line 22, ../sass/components/_footer.scss */
+/* line 23, ../sass/components/_footer.scss */
 .social__icon {
   display: inline-block;
   height: 60px;
 }
-/* line 25, ../sass/components/_footer.scss */
+/* line 26, ../sass/components/_footer.scss */
 .social__icon img {
   width: 20px;
 }
-/* line 28, ../sass/components/_footer.scss */
-.social__icon .icon-facebook, .social__icon .icon-twitter, .social__icon .icon-youtube, .social__icon .icon-vimeo, .social__icon .icon-instagram {
+/* line 29, ../sass/components/_footer.scss */
+.social__icon .icon-github, .social__icon .icon-twitter, .social__icon .icon-youtube, .social__icon .icon-vimeo, .social__icon .icon-instagram {
+  position: relative;
   background: none;
   display: inline-block;
   padding: 30px 10px;
   margin: 0;
+  text-align: center;
+}
+/* line 36, ../sass/components/_footer.scss */
+.social__icon .icon-github:hover:before, .social__icon .icon-twitter:hover:before, .social__icon .icon-youtube:hover:before, .social__icon .icon-vimeo:hover:before, .social__icon .icon-instagram:hover:before {
+  position: absolute;
+  bottom: 55px;
+  font-size: .5em;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* line 45, ../sass/components/_footer.scss */
+.icon-github:hover:before {
+  content: 'GitHub';
+}
+
+/* line 46, ../sass/components/_footer.scss */
+.icon-twitter:hover:before {
+  content: 'Twitter';
+}
+
+/* line 47, ../sass/components/_footer.scss */
+.icon-youtube:hover:before {
+  content: 'YouTube';
+}
+
+/* line 48, ../sass/components/_footer.scss */
+.icon-vimeo:hover:before {
+  content: 'Vimeo';
+}
+
+/* line 49, ../sass/components/_footer.scss */
+.icon-instagram:hover:before {
+  content: 'Instagram';
 }
 
 /* line 5, ../sass/components/_projects.scss */
@@ -527,7 +563,7 @@ html {
 
 /* JQUERY ZOOM */
 /* magnifying glass icon */
-/* line 104, ../sass/components/_projects.scss */
+/* line 103, ../sass/components/_projects.scss */
 .zoom:after {
   content: '';
   display: block;
@@ -540,23 +576,23 @@ html {
   z-index: 0;
 }
 
-/* line 116, ../sass/components/_projects.scss */
+/* line 115, ../sass/components/_projects.scss */
 .zoom img {
   display: block;
   z-index: 1;
 }
 
-/* line 121, ../sass/components/_projects.scss */
+/* line 120, ../sass/components/_projects.scss */
 .zoom img::selection {
   background-color: transparent;
 }
 
-/* line 123, ../sass/components/_projects.scss */
+/* line 122, ../sass/components/_projects.scss */
 #project__bms img:hover {
   cursor: url(grab.cur), default;
 }
 
-/* line 124, ../sass/components/_projects.scss */
+/* line 123, ../sass/components/_projects.scss */
 #project__bms img:active {
   cursor: url(grabbed.cur), default;
 }
@@ -569,30 +605,31 @@ html {
   font-size: 16px;
   display: block;
   padding: 15px 30px;
-  color: #45B649;
+  color: #f9f9f9;
+  background: #45B649;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 50px auto 0;
-  background: #f9f9f9;
+  letter-spacing: 2px;
   border: 1px solid #f9f9f9;
 }
 
-/* line 18, ../sass/modules/_cta.scss */
+/* line 19, ../sass/modules/_cta.scss */
 .anchor {
   visibility: hidden;
   padding-top: 100px;
   margin: 0;
 }
 
-/* line 23, ../sass/modules/_cta.scss */
+/* line 24, ../sass/modules/_cta.scss */
 .cta:hover {
-  color: #f9f9f9;
-  background: #45B649;
+  color: #45B649;
+  background: #f9f9f9;
 }
 
-/* line 27, ../sass/modules/_cta.scss */
+/* line 28, ../sass/modules/_cta.scss */
 .contact__cta {
   display: inline-block;
   margin: 15px;

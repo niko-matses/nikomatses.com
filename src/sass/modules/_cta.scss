@@ -1,18 +1,19 @@
 .cta {
 	width: 50%;
 	max-width: 300px;
-	@include codaFont;
+    @include codaFont;
 	font-size: 16px;
 	display:block;
 	padding: 15px 30px;
-	color:$green;
+   	color: $white;
+	background: $green;	
 	text-decoration: none;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	letter-spacing: 1px;
     transition: background-color 0.3s ease,
                 color 0.3s ease;
     margin: 50px auto 0;
-    background: $white;
+    letter-spacing: 2px;
     border: 1px solid $white;
 }
 .anchor {
@@ -21,8 +22,8 @@
   margin: 0;    
 }
 .cta:hover {
-	color: $white;
-	background: $green;	
+   	color:$green;
+    background: $white;
 }
 .contact__cta {
   display: inline-block;
