@@ -917,13 +917,31 @@ body, html {
 }
 
 /* Fixed Vertical Nav */
+/* line 32, ../sass/base/components/_nav.scss */
+.cd-img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* line 40, ../sass/base/components/_nav.scss */
+#cd-vertical-nav a {
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #45B649;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 /* No Touch devices */
-/* line 33, ../sass/base/components/_nav.scss */
+/* line 48, ../sass/base/components/_nav.scss */
 .cd-nav-trigger {
   display: none;
 }
 
-/* line 37, ../sass/base/components/_nav.scss */
+/* line 52, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav {
   position: fixed;
   right: 2%;
@@ -934,15 +952,15 @@ body, html {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 3;
 }
 
-/* line 49, ../sass/base/components/_nav.scss */
+/* line 64, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav li {
   text-align: right;
 }
 
-/* line 52, ../sass/base/components/_nav.scss */
+/* line 67, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav a {
   display: inline-block;
   /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
@@ -950,14 +968,14 @@ body, html {
   backface-visibility: hidden;
 }
 
-/* line 58, ../sass/base/components/_nav.scss */
+/* line 73, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav a:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 63, ../sass/base/components/_nav.scss */
+/* line 78, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav a span {
   float: right;
   display: inline-block;
@@ -968,7 +986,7 @@ body, html {
   transform: scale(0.6);
 }
 
-/* line 72, ../sass/base/components/_nav.scss */
+/* line 87, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav a:hover span {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -977,17 +995,17 @@ body, html {
   transform: scale(1);
 }
 
-/* line 79, ../sass/base/components/_nav.scss */
+/* line 94, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
 
-/* line 82, ../sass/base/components/_nav.scss */
+/* line 97, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
   background-color: white;
 }
 
-/* line 85, ../sass/base/components/_nav.scss */
+/* line 100, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
@@ -1006,7 +1024,7 @@ body, html {
   transform-origin: 50% 50%;
 }
 
-/* line 102, ../sass/base/components/_nav.scss */
+/* line 117, ../sass/base/components/_nav.scss */
 .no-touch #cd-vertical-nav .cd-label {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -1029,10 +1047,10 @@ body, html {
 }
 
 /* Touch devices */
-/* line 124, ../sass/base/components/_nav.scss */
+/* line 139, ../sass/base/components/_nav.scss */
 .touch .cd-nav-trigger {
   display: block;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   bottom: 30px;
   right: 5%;
@@ -1042,7 +1060,7 @@ body, html {
   background: rgba(255, 255, 255, 0.9);
 }
 
-/* line 135, ../sass/base/components/_nav.scss */
+/* line 150, ../sass/base/components/_nav.scss */
 .touch .cd-nav-trigger span {
   position: absolute;
   height: 4px;
@@ -1060,7 +1078,7 @@ body, html {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 151, ../sass/base/components/_nav.scss */
+/* line 166, ../sass/base/components/_nav.scss */
 .touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
   content: '';
   height: 100%;
@@ -1071,20 +1089,20 @@ body, html {
   border-radius: inherit;
 }
 
-/* line 160, ../sass/base/components/_nav.scss */
+/* line 175, ../sass/base/components/_nav.scss */
 .touch .cd-nav-trigger span::before {
   top: -9px;
 }
 
-/* line 163, ../sass/base/components/_nav.scss */
+/* line 178, ../sass/base/components/_nav.scss */
 .touch .cd-nav-trigger span::after {
   bottom: -9px;
 }
 
-/* line 167, ../sass/base/components/_nav.scss */
+/* line 182, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   right: 5%;
   bottom: 30px;
   width: 90%;
@@ -1109,27 +1127,27 @@ body, html {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
   border-radius: 0.25em;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #f9f9f9;
 }
 
-/* line 196, ../sass/base/components/_nav.scss */
+/* line 211, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav a {
   display: block;
   padding: 1em;
   border-bottom: 1px solid rgba(62, 57, 71, 0.1);
 }
 
-/* line 201, ../sass/base/components/_nav.scss */
+/* line 216, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav a span:first-child {
   display: none;
 }
 
-/* line 204, ../sass/base/components/_nav.scss */
+/* line 219, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav a.is-selected span:last-child {
   color: #d88683;
 }
 
-/* line 207, ../sass/base/components/_nav.scss */
+/* line 222, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav.open {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1138,17 +1156,17 @@ body, html {
   transform: scale(1);
 }
 
-/* line 214, ../sass/base/components/_nav.scss */
+/* line 229, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger {
   background-color: transparent;
 }
 
-/* line 217, ../sass/base/components/_nav.scss */
+/* line 232, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span {
   background-color: rgba(62, 57, 71, 0);
 }
 
-/* line 220, ../sass/base/components/_nav.scss */
+/* line 235, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
   background-color: #3e3947;
   height: 3px;
@@ -1157,7 +1175,7 @@ body, html {
   left: -8px;
 }
 
-/* line 227, ../sass/base/components/_nav.scss */
+/* line 242, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1167,7 +1185,7 @@ body, html {
   top: 1px;
 }
 
-/* line 235, ../sass/base/components/_nav.scss */
+/* line 250, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -1177,13 +1195,13 @@ body, html {
   bottom: 0;
 }
 
-/* line 243, ../sass/base/components/_nav.scss */
+/* line 258, ../sass/base/components/_nav.scss */
 .touch #cd-vertical-nav li:last-child a {
   border-bottom: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 248, ../sass/base/components/_nav.scss */
+  /* line 263, ../sass/base/components/_nav.scss */
   .touch .cd-nav-trigger, .touch #cd-vertical-nav {
     bottom: 40px;
   }
