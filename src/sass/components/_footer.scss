@@ -21,26 +21,26 @@
 
 }
 .social__icon {
-  display: inline-block;
-  height: 60px;
-  img {
+   display: inline-block;
+   height: 60px;
+   img {
     width: 22px;
-  }
-  .icon-github, .icon-twitter, .icon-youtube, .icon-vimeo, .icon-instagram {
-    position: relative;
-    background: none;
-    display: inline-block;
-    padding: 30px 10px;
-    margin: 0;
-     text-align: center;
-     &:hover:before {
-        position: absolute;
-        bottom: 60px;
-        font-size: .6em; 
-        color: #fff;
-        letter-spacing: 2px;
-     }
-  }
+   }
+   .icon-github, .icon-twitter, .icon-youtube, .icon-vimeo, .icon-instagram {
+      position: relative;
+      background: none;
+      display: inline-block;
+      padding: 30px 10px;
+      margin: 0;
+      text-align: center;   
+      &:hover:before {
+         position: absolute;
+         bottom: 60px;
+         font-size: .6em; 
+         color: #fff;
+         letter-spacing: 2px; 
+      }
+   }
 }
 .icon-github:hover:before {content: 'GitHub';}
 .icon-twitter:hover:before {content: 'Twitter'}

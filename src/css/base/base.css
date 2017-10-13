@@ -1,22 +1,11 @@
 /*
-Error: Undefined variable: "$white".
-        on line 5 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/components/_main-content.scss
-        from line 5 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/base.scss
-
-1: //@import "vendor/reset";
-2: @import "variables";
-3: //@import "components/nav";
-4: @import "components/hero";
-5: @import "components/main-content";
-6: //@import "components/footer";
-7: @import 'components/experience'; 
-8: 
-9: body {
-10:    font-size: 16px;
+Error: Undefined variable: "$green".
+        on line 92 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/components/_nav.scss
+        from line 3 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/base.scss
 
 Backtrace:
-C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/components/_main-content.scss:5
-C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/base.scss:5
+C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/components/_nav.scss:92
+C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/base.scss:3
 C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -83,4 +72,4 @@ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/l
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 5 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/components/_main-content.scss\A         from line 5 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/base.scss\A \A 1: //@import \"vendor/reset\";\A 2: @import \"variables\";\A 3: //@import \"components/nav\";\A 4: @import \"components/hero\";\A 5: @import \"components/main-content\";\A 6: //@import \"components/footer\";\A 7: @import 'components/experience'; \A 8: \A 9: body {\A 10:    font-size: 16px;"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 92 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/components/_nav.scss\A         from line 3 of C:/Users/Niko/Documents/Sites/nikomatses.com/src/sass/base/base.scss"; }
