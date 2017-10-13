@@ -14,13 +14,22 @@
 	@include smoothText;
 }
 
-.project__card, .section__skills {
+.project__card {
+  margin-bottom: 3%;
+	vertical-align: top;
+	@media (min-width: 640px) {
+      display: inline-block;
+      width: 46%;
+      margin-right: 3%;
+	}
+}
+.section__skills {
   margin-bottom: 4%;
 	vertical-align: top;
 	@media (min-width: 640px) {
       display: inline-block;
-      width: 45%;
-      margin-right: 4%;
+      width: 44%;
+      margin-right: 5%;
 	}
 }
 .project__featured-image {
@@ -71,7 +80,7 @@
       display: block;
       padding: 20px;
       font-size: .75em;
-      line-height: 0;
+      line-height: .75;
       letter-spacing: .075em;
       text-transform: uppercase;
       color: $green;
@@ -84,12 +93,12 @@
       &:after {
          @include smoothText;
          position: relative;
-         top: -1px; 
+         top: 5px; 
          float: right;
          color: $white;
-         font-size: 2.5em;
+         font-size: 2em;
          line-height: 0;
-         content: '\261B';
+         content: '\2708';
       }      
    }
 	 &:hover {
@@ -101,14 +110,20 @@
 
 /* magnifying glass icon */
 .zoom:after {
+   opacity: 0;
+   transition: opacity .3s;
+}
+.zoom:hover:after {
    content:'';
-   display:block; 
-   width:33px; 
-   height:33px; 
+   display:block;
+   opacity: 1;
+   width:22px; 
+   height:22px; 
    position:absolute; 
-   top:0;
-   right:0;
-   background:url(../img/icons/icon-zoom.png);
+   top:5px;
+   right:5px;
+   background:url(../img/icons/icon-zoom.svg);
+   transition: opacity .3s;
    z-index: 0;
 }
  

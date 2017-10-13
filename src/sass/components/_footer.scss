@@ -24,7 +24,7 @@
   display: inline-block;
   height: 60px;
   img {
-    width: 20px;
+    width: 22px;
   }
   .icon-github, .icon-twitter, .icon-youtube, .icon-vimeo, .icon-instagram {
     position: relative;
@@ -35,8 +35,8 @@
      text-align: center;
      &:hover:before {
         position: absolute;
-        bottom: 55px;
-        font-size: .5em; 
+        bottom: 60px;
+        font-size: .6em; 
         color: #fff;
         letter-spacing: 2px;
      }
