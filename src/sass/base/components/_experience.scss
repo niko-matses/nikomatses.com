@@ -1,0 +1,20 @@
+.section__experience {
+   font-size: 0;
+   margin-bottom: 60px;   
+   .main-content__headline {
+      font-size: 2rem;
+   } 
+   .main-content__paragraph {
+      vertical-align: top;
+      display: inline-block;
+      text-align: left;
+      font-size: 1.1rem;
+      padding-right: 5%;
+      @media (min-width: 960px) {
+         width: 33%;
+         text-align: center;
+         padding: 30px 30px 60px 0;
+         font-size: 1rem;         
+      }
+   }
+}

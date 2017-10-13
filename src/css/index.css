@@ -1029,7 +1029,34 @@ body, html {
   color: #45B649;
 }
 
-/* line 8, ../sass/base/base.scss */
+/* line 1, ../sass/base/components/_experience.scss */
+.section__experience {
+  font-size: 0;
+  margin-bottom: 60px;
+}
+/* line 4, ../sass/base/components/_experience.scss */
+.section__experience .main-content__headline {
+  font-size: 2rem;
+}
+/* line 7, ../sass/base/components/_experience.scss */
+.section__experience .main-content__paragraph {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  font-size: 1.1rem;
+  padding-right: 5%;
+}
+@media (min-width: 960px) {
+  /* line 7, ../sass/base/components/_experience.scss */
+  .section__experience .main-content__paragraph {
+    width: 33%;
+    text-align: center;
+    padding: 30px 30px 60px 0;
+    font-size: 1rem;
+  }
+}
+
+/* line 9, ../sass/base/base.scss */
 body {
   font-size: 16px;
   font-family: sans-serif;
