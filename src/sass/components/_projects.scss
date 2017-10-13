@@ -90,7 +90,7 @@
 		color: #fff;
         transition: color .3s;
 	  }   
-      &:after {
+      &:hover:after {
          @include smoothText;
          position: relative;
          top: 5px; 
@@ -98,8 +98,8 @@
          color: $white;
          font-size: 2em;
          line-height: 0;
-         content: '\2708';
-      }      
+         content: '\2708 \FE0E';
+      }       
    }
 	 &:hover {
 		background: $green;

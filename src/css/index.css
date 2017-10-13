@@ -558,7 +558,7 @@ html {
   transition: color .3s;
 }
 /* line 93, ../sass/components/_projects.scss */
-.project__cta .project__link:after {
+.project__cta .project__link:hover:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -567,7 +567,7 @@ html {
   color: #f9f9f9;
   font-size: 2em;
   line-height: 0;
-  content: '\2708';
+  content: '\2708 \FE0E';
 }
 /* line 104, ../sass/components/_projects.scss */
 .project__cta:hover {
@@ -621,8 +621,7 @@ html {
 
 /* line 1, ../sass/modules/_cta.scss */
 .cta {
-  width: 50%;
-  max-width: 300px;
+  width: 85%;
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   display: block;
@@ -637,21 +636,28 @@ html {
   letter-spacing: 2px;
   border: 1px solid #f9f9f9;
 }
+@media (min-width: 640px) {
+  /* line 1, ../sass/modules/_cta.scss */
+  .cta {
+    max-width: 300px;
+    width: 50%;
+  }
+}
 
-/* line 19, ../sass/modules/_cta.scss */
+/* line 23, ../sass/modules/_cta.scss */
 .anchor {
   visibility: hidden;
   padding-top: 100px;
   margin: 0;
 }
 
-/* line 24, ../sass/modules/_cta.scss */
+/* line 28, ../sass/modules/_cta.scss */
 .cta:hover {
   color: #45B649;
   background: #f9f9f9;
 }
 
-/* line 28, ../sass/modules/_cta.scss */
+/* line 32, ../sass/modules/_cta.scss */
 .contact__cta {
   display: inline-block;
   margin: 15px;
@@ -1046,13 +1052,12 @@ body, html {
   font-size: 1.1rem;
   padding-right: 5%;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   /* line 7, ../sass/base/components/_experience.scss */
   .section__experience .main-content__paragraph {
     width: 33%;
-    text-align: center;
-    padding: 30px 30px 60px 0;
-    font-size: 1rem;
+    padding: 30px 30px 30px 0;
+    font-size: 1.1rem;
   }
 }
 

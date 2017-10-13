@@ -1,6 +1,6 @@
 .cta {
-	width: 50%;
-	max-width: 300px;
+	width: 85%;
+
     @include codaFont;
 	font-size: 16px;
 	display:block;
@@ -15,6 +15,10 @@
     margin: 50px auto 0;
     letter-spacing: 2px;
     border: 1px solid $white;
+   @media (min-width: 640px) {
+      max-width: 300px;
+      width: 50%
+   }
 }
 .anchor {
   visibility:hidden;
@@ -29,4 +33,3 @@
   display: inline-block;
   margin: 15px;
 }
-
