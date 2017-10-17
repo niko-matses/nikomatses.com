@@ -1,0 +1,24 @@
+{
+  "name": "nikomatses.com",
+  "version": "1.0.0",
+  "description": "Personal Promotional Website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niko-matses/nikomatses.com.git"
+  },
+  "author": "Niko Matses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niko-matses/nikomatses.com/issues"
+  },
+  "homepage": "https://github.com/niko-matses/nikomatses.com#readme"
+}
