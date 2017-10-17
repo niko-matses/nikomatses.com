@@ -1,19 +1,16 @@
-@charset "utf-8";
-
-@import 'variables';
-@import 'pres/reset';
-
-@import 'components/base';
-@import 'components/typography';
-@import 'components/nav';
-@import 'components/header';
-@import 'components/main';
-@import 'components/about';
-@import 'components/footer';
-@import 'components/projects';  
+@import 'helpers/variables';
+@import 'helpers/reset';
+@import 'helpers/queries';
+@import 'helpers/video';
 
 @import 'modules/cta';
-@import 'modules/animate';
-@import 'modules/vimeo';
+@import 'modules/animation';
+@import 'modules/typography';
+@import 'modules/main';
 
-@import 'base/base';
+@import 'components/nav';
+@import 'components/vertical-nav';
+@import "components/hero";
+@import 'components/projects';
+@import 'components/experience'; 
+@import 'components/footer';
