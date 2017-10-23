@@ -13,7 +13,6 @@
     border: 1px solid $ltgray;
 	@include smoothText;
 }
-
 .project__card {
   margin-bottom: 3%;
 	vertical-align: top;
@@ -93,12 +92,12 @@
       &:hover:after {
          @include smoothText;
          position: relative;
-         top: 5px; 
+         top: 4px; 
          float: right;
          color: $white;
-         font-size: 2em;
+         font-size: 2.5em;
          line-height: 0;
-         content: '\2708 \FE0E';
+         content: '\261B \FE0E';
       }       
    }
 	 &:hover {

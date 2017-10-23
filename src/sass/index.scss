@@ -3,10 +3,10 @@
 @import 'helpers/queries';
 @import 'helpers/video';
 
+@import 'modules/main';
+@import 'modules/typography';
 @import 'modules/cta';
 @import 'modules/animation';
-@import 'modules/typography';
-@import 'modules/main';
 
 @import 'components/nav';
 @import 'components/vertical-nav';
@@ -14,3 +14,5 @@
 @import 'components/projects';
 @import 'components/experience'; 
 @import 'components/footer';
+
+//take some cool stuff in the /scss directory
