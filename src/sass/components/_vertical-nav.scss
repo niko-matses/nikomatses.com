@@ -87,15 +87,18 @@
 }
 .no-touch #cd-vertical-nav .cd-label {
   @include codaFont;
+  position: relative;
+  top: -6px;
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  margin-right: 10px;
-  padding: .4em .5em;
+  margin-right: 1em;
+  padding: 1.5em 2em;
   color: $gray;
   background-color: $white;
   font-size: 14px;
   font-size: 0.875rem;
+  line-height: 0;    
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -105,6 +108,7 @@
   -ms-transform-origin: 100% 50%;
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
+  border-radius: 20px;
 }
 
 /* Touch devices */

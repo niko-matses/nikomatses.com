@@ -9,12 +9,19 @@
       padding: 2em 1em 0;
     }
     .main-content__headline {
-      font-size: 2em;
-      line-height: 1.25em;
+	  @include serif;
+      @include smoothText;
+      font-size: 3em;
+      line-height: 1.5em;
+      letter-spacing: 1px;
       padding-bottom: 1em;
       color: $green;
-    }
-    .main-content__button {
+   }
+   .main-content__lead-paragraph, .main-content__subhead, .main-content__paragraph {
+     @include codaFont;
+     @include smoothText;
+   }
+   .main-content__button {
         display: block;
         text-align: center;
         font-size: 1.5em;

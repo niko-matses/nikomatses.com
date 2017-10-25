@@ -2,20 +2,8 @@
 html {
     font-size: 16px;
 }
-.main-content__headline, .main-content__subhead {
-	@include codaFont;
-  @include smoothText;
-}
-.main-content__lead-paragraph, .main-content__paragraph {
-	@include codaFont;
-  @include smoothText;
-}
-.main-content__headline {
-  
-}
-.main-content__subhead {
-  
-}
+
+
 .main-content__subhead {
   font-weight: 600;
   letter-spacing: 1px;

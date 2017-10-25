@@ -126,12 +126,22 @@ table {
 }
 /* line 11, ../sass/modules/_main.scss */
 .main-content .main-content__headline {
-  font-size: 2em;
-  line-height: 1.25em;
+  font-family: "rinse", "Coda","Arial",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 3em;
+  line-height: 1.5em;
+  letter-spacing: 1px;
   padding-bottom: 1em;
   color: #45B649;
 }
-/* line 17, ../sass/modules/_main.scss */
+/* line 20, ../sass/modules/_main.scss */
+.main-content .main-content__lead-paragraph, .main-content .main-content__subhead, .main-content .main-content__paragraph {
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 24, ../sass/modules/_main.scss */
 .main-content .main-content__button {
   display: block;
   text-align: center;
@@ -145,7 +155,7 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 29, ../sass/modules/_main.scss */
+/* line 36, ../sass/modules/_main.scss */
 .main-content .content--inverted {
   padding: 2em 0;
   margin: 2em 0;
@@ -153,14 +163,14 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 34, ../sass/modules/_main.scss */
+/* line 41, ../sass/modules/_main.scss */
 .main-content .content--inverted .main-content__headline,
 .main-content .content--inverted .main-content__subhead,
 .main-content .content--inverted .main-content__paragraph,
 .main-content .content--inverted .main-content__lead-paragraph {
   color: #fff;
 }
-/* line 40, ../sass/modules/_main.scss */
+/* line 47, ../sass/modules/_main.scss */
 .main-content .content--inverted .main-content__button {
   background: #fff;
   color: #45B649;
@@ -171,21 +181,7 @@ html {
   font-size: 16px;
 }
 
-/* line 5, ../sass/modules/_typography.scss */
-.main-content__headline, .main-content__subhead {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 9, ../sass/modules/_typography.scss */
-.main-content__lead-paragraph, .main-content__paragraph {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 19, ../sass/modules/_typography.scss */
+/* line 7, ../sass/modules/_typography.scss */
 .main-content__subhead {
   font-weight: 600;
   letter-spacing: 1px;
@@ -194,42 +190,42 @@ html {
   padding-bottom: 1em;
 }
 
-/* line 26, ../sass/modules/_typography.scss */
+/* line 14, ../sass/modules/_typography.scss */
 .main-content__paragraph, .main-content__lead-paragraph {
   font-size: 1.15em;
   line-height: 1.5em;
   color: #898989;
   padding-bottom: 1em;
 }
-/* line 31, ../sass/modules/_typography.scss */
+/* line 19, ../sass/modules/_typography.scss */
 .main-content__paragraph a, .main-content__lead-paragraph a {
   color: #45B649;
   text-decoration: none;
 }
 
-/* line 36, ../sass/modules/_typography.scss */
+/* line 24, ../sass/modules/_typography.scss */
 .main-content__lead-paragraph {
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
-/* line 40, ../sass/modules/_typography.scss */
+/* line 28, ../sass/modules/_typography.scss */
 .main-content__ordered-list, main-content__unordered-list {
   display: block;
   color: #f9f9f9;
   list-style: outside;
   margin: 0 0 2em 2em;
 }
-/* line 45, ../sass/modules/_typography.scss */
+/* line 33, ../sass/modules/_typography.scss */
 .main-content__ordered-list li, main-content__unordered-list li {
   list-style-type: decimal-leading-zero;
 }
-/* line 48, ../sass/modules/_typography.scss */
+/* line 36, ../sass/modules/_typography.scss */
 .main-content__ordered-list .main-content__subhead, main-content__unordered-list .main-content__subhead {
   padding-left: 1em;
   text-transform: none;
 }
-/* line 52, ../sass/modules/_typography.scss */
+/* line 40, ../sass/modules/_typography.scss */
 .main-content__ordered-list .main-content__headline, main-content__unordered-list .main-content__headline {
   text-transform: none;
   font-weight: normal;
@@ -550,15 +546,18 @@ body {
 /* line 88, ../sass/components/_vertical-nav.scss */
 .no-touch #cd-vertical-nav .cd-label {
   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  top: -6px;
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  margin-right: 10px;
-  padding: .4em .5em;
+  margin-right: 1em;
+  padding: 1.5em 2em;
   color: #898989;
   background-color: #f9f9f9;
   font-size: 14px;
   font-size: 0.875rem;
+  line-height: 0;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -568,10 +567,11 @@ body {
   -ms-transform-origin: 100% 50%;
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
+  border-radius: 20px;
 }
 
 /* Touch devices */
-/* line 111, ../sass/components/_vertical-nav.scss */
+/* line 115, ../sass/components/_vertical-nav.scss */
 .touch .cd-nav-trigger {
   display: block;
   z-index: 3;
@@ -584,7 +584,7 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 
-/* line 122, ../sass/components/_vertical-nav.scss */
+/* line 126, ../sass/components/_vertical-nav.scss */
 .touch .cd-nav-trigger span {
   position: absolute;
   height: 4px;
@@ -602,7 +602,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 138, ../sass/components/_vertical-nav.scss */
+/* line 142, ../sass/components/_vertical-nav.scss */
 .touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
   content: '';
   height: 100%;
@@ -613,17 +613,17 @@ body {
   border-radius: inherit;
 }
 
-/* line 147, ../sass/components/_vertical-nav.scss */
+/* line 151, ../sass/components/_vertical-nav.scss */
 .touch .cd-nav-trigger span::before {
   top: -9px;
 }
 
-/* line 150, ../sass/components/_vertical-nav.scss */
+/* line 154, ../sass/components/_vertical-nav.scss */
 .touch .cd-nav-trigger span::after {
   bottom: -9px;
 }
 
-/* line 154, ../sass/components/_vertical-nav.scss */
+/* line 158, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav {
   position: fixed;
   z-index: 3;
@@ -654,24 +654,24 @@ body {
   background-color: #f9f9f9;
 }
 
-/* line 183, ../sass/components/_vertical-nav.scss */
+/* line 187, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav a {
   display: block;
   padding: 1em;
   border-bottom: 1px solid rgba(62, 57, 71, 0.1);
 }
 
-/* line 188, ../sass/components/_vertical-nav.scss */
+/* line 192, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav a span:first-child {
   display: none;
 }
 
-/* line 191, ../sass/components/_vertical-nav.scss */
+/* line 195, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav a.is-selected span:last-child {
   color: #d88683;
 }
 
-/* line 194, ../sass/components/_vertical-nav.scss */
+/* line 198, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav.open {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -680,17 +680,17 @@ body {
   transform: scale(1);
 }
 
-/* line 201, ../sass/components/_vertical-nav.scss */
+/* line 205, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger {
   background-color: transparent;
 }
 
-/* line 204, ../sass/components/_vertical-nav.scss */
+/* line 208, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span {
   background-color: rgba(62, 57, 71, 0);
 }
 
-/* line 207, ../sass/components/_vertical-nav.scss */
+/* line 211, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
   background-color: #3e3947;
   height: 3px;
@@ -699,7 +699,7 @@ body {
   left: -8px;
 }
 
-/* line 214, ../sass/components/_vertical-nav.scss */
+/* line 218, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -709,7 +709,7 @@ body {
   top: 1px;
 }
 
-/* line 222, ../sass/components/_vertical-nav.scss */
+/* line 226, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -719,13 +719,13 @@ body {
   bottom: 0;
 }
 
-/* line 230, ../sass/components/_vertical-nav.scss */
+/* line 234, ../sass/components/_vertical-nav.scss */
 .touch #cd-vertical-nav li:last-child a {
   border-bottom: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 235, ../sass/components/_vertical-nav.scss */
+  /* line 239, ../sass/components/_vertical-nav.scss */
   .touch .cd-nav-trigger, .touch #cd-vertical-nav {
     bottom: 40px;
   }
@@ -743,7 +743,7 @@ body {
 .hero .hero__headline {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "rinse","Coda","Arial",sans-serif;
+  font-family: "rinse", "Coda","Arial",sans-serif;
   z-index: 2;
   font-size: 3em;
   padding: 1em;
@@ -981,7 +981,7 @@ body {
 }
 /* line 4, ../sass/components/_experience.scss */
 .section__experience .main-content__headline {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 /* line 7, ../sass/components/_experience.scss */
 .section__experience .main-content__paragraph {
