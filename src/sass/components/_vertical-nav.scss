@@ -10,6 +10,7 @@
 
 #cd-vertical-nav a {
    @include codaFont;
+   font-weight: bold;
    color: $green;
    letter-spacing: 2px;
    text-transform: uppercase;
@@ -90,12 +91,11 @@
   position: relative;
   top: -6px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   position: relative;
   margin-right: 1em;
   padding: 1.5em 2em;
-  color: $gray;
-  background-color: $white;
+  //color: $gray;
+  background-color: #fff;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 0;    
