@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Coda);
+@import url("https://use.typekit.net/qbp5vqk.css");
 /* line 1, ../sass/helpers/_reset.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -137,7 +138,7 @@ table {
 }
 /* line 20, ../sass/modules/_main.scss */
 .main-content .main-content__lead-paragraph, .main-content .main-content__subhead, .main-content .main-content__paragraph {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -176,12 +177,12 @@ table {
   color: #39af84;
 }
 
-/* line 2, ../sass/modules/_typography.scss */
+/* line 3, ../sass/modules/_typography.scss */
 html {
   font-size: 16px;
 }
 
-/* line 7, ../sass/modules/_typography.scss */
+/* line 8, ../sass/modules/_typography.scss */
 .main-content__subhead {
   font-weight: 600;
   letter-spacing: 1px;
@@ -190,42 +191,42 @@ html {
   padding-bottom: 1em;
 }
 
-/* line 14, ../sass/modules/_typography.scss */
+/* line 15, ../sass/modules/_typography.scss */
 .main-content__paragraph, .main-content__lead-paragraph {
   font-size: 1.15em;
   line-height: 1.5em;
   color: #898989;
   padding-bottom: 1em;
 }
-/* line 19, ../sass/modules/_typography.scss */
+/* line 20, ../sass/modules/_typography.scss */
 .main-content__paragraph a, .main-content__lead-paragraph a {
   color: #39af84;
   text-decoration: none;
 }
 
-/* line 24, ../sass/modules/_typography.scss */
+/* line 25, ../sass/modules/_typography.scss */
 .main-content__lead-paragraph {
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
-/* line 28, ../sass/modules/_typography.scss */
+/* line 29, ../sass/modules/_typography.scss */
 .main-content__ordered-list, main-content__unordered-list {
   display: block;
   color: #f9f9f9;
   list-style: outside;
   margin: 0 0 2em 2em;
 }
-/* line 33, ../sass/modules/_typography.scss */
+/* line 34, ../sass/modules/_typography.scss */
 .main-content__ordered-list li, main-content__unordered-list li {
   list-style-type: decimal-leading-zero;
 }
-/* line 36, ../sass/modules/_typography.scss */
+/* line 37, ../sass/modules/_typography.scss */
 .main-content__ordered-list .main-content__subhead, main-content__unordered-list .main-content__subhead {
   padding-left: 1em;
   text-transform: none;
 }
-/* line 40, ../sass/modules/_typography.scss */
+/* line 41, ../sass/modules/_typography.scss */
 .main-content__ordered-list .main-content__headline, main-content__unordered-list .main-content__headline {
   text-transform: none;
   font-weight: normal;
@@ -234,7 +235,7 @@ html {
 /* line 1, ../sass/modules/_cta.scss */
 .cta {
   width: 85%;
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   display: block;
   padding: 15px 30px;
@@ -378,7 +379,7 @@ body {
 }
 /* line 1, ../sass/components/_nav.scss */
 .nav {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   right: 0;
   width: 100%;
@@ -449,7 +450,7 @@ body {
 
 /* line 11, ../sass/components/_vertical-nav.scss */
 #cd-vertical-nav a {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #39af84;
   letter-spacing: 2px;
@@ -548,7 +549,7 @@ body {
 
 /* line 89, ../sass/components/_vertical-nav.scss */
 .no-touch #cd-vertical-nav .cd-label {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   top: -6px;
   text-transform: uppercase;
@@ -847,22 +848,22 @@ body {
 
 /* line 40, ../sass/components/_projects.scss */
 .project__details {
-  padding: 15px;
+  padding: 20px 15px 15px;
 }
 
 /* line 43, ../sass/components/_projects.scss */
 .project__title {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #39af84;
   letter-spacing: .01em;
-  font-size: 1.5em;
+  font-size: 1.75em;
   padding-bottom: 15px;
   font-weight: normal;
 }
 
 /* line 51, ../sass/components/_projects.scss */
 .project__description {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.25;
   letter-spacing: .025em;
   color: #898989;
@@ -871,13 +872,12 @@ body {
 
 /* line 58, ../sass/components/_projects.scss */
 .project__role, .project__tools {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   font-size: .75em;
   line-height: 1.5;
   letter-spacing: .075em;
   text-transform: uppercase;
-  font-weight: bold;
   color: #898989;
   background: #f9f9f9;
   border: 1px solid #ebebeb;
@@ -894,7 +894,7 @@ body {
 .project__cta {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* line 78, ../sass/components/_projects.scss */
 .project__cta .project__link {
@@ -1011,7 +1011,7 @@ body {
 
 /* line 1, ../sass/components/_footer.scss */
 .footer {
-  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   margin: auto;
   padding: 60px 15px;

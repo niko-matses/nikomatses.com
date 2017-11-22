@@ -38,13 +38,13 @@
    display: block;
 }
 .project__details {
-   padding: 15px;
+   padding: 20px 15px 15px;
 }
 .project__title {
    @include codaFont;
    color: $green;
    letter-spacing: .01em;
-   font-size: 1.5em;
+   font-size: 1.75em;
    padding-bottom: 15px;
    font-weight: normal;
 }
@@ -62,7 +62,7 @@
    line-height: 1.5;
    letter-spacing: .075em;
    text-transform: uppercase;
-   font-weight: bold;
+   //font-weight: bold;
    color: $gray;
    background: $white;
    border: 1px solid $ltgray;
