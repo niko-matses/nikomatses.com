@@ -4,16 +4,17 @@
 	font-size: 16px;
 	display:block;
 	padding: 15px 30px;
-   	color: $green;
-	background: $othergray;	
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-    transition: background-color 0.3s ease,
-                color 0.3s ease;
     margin: 50px auto 0;
-    letter-spacing: 2px;
-    border: 1px solid $green;
+    color: $white;
+	background: $green;
+    border: 1px solid $white;
+    border-radius: 30px;   
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    text-decoration: none;
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                border-radius 0.3s ease;
    @media (min-width: 640px) {
       max-width: 300px;
       width: 50%
@@ -25,8 +26,10 @@
   margin: 0;    
 }
 .cta:hover {
-   	color:$green;
-    background: $white;
+   color:$green;
+   background: $white;
+   text-decoration: none;
+   border: 1px solid $green;   
 }
 .contact__cta {
   display: inline-block;
