@@ -1,0 +1,137 @@
+@mixin capSpace {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+.section__projects {
+   @include smoothText;
+}
+
+.main-content__headline {}
+
+.project__card {
+	background-color: #fff;
+    border: 1px solid $ltgray;
+	@include smoothText;
+}
+.project__card {
+  margin-bottom: 3%;
+	vertical-align: top;
+	@media (min-width: 640px) {
+      display: inline-block;
+      width: 46%;
+      margin-right: 3%;
+	}
+}
+.section__skills {
+  margin-bottom: 4%;
+	vertical-align: top;
+	@media (min-width: 640px) {
+      display: inline-block;
+      width: 44%;
+      margin-right: 5%;
+	}
+}
+.project__featured-image {
+	max-width: 100%;
+}
+.project__label {
+   display: block;
+}
+.project__details {
+   padding: 15px;
+}
+.project__title {
+   @include codaFont;
+   color: $green;
+   letter-spacing: .01em;
+   font-size: 1.5em;
+   padding-bottom: 15px;
+   font-weight: normal;
+}
+.project__description {	
+   @include codaFont;
+   line-height: 1.25;
+   letter-spacing: .025em;
+   color: $gray;
+   margin-bottom: 30px;
+}
+.project__role, .project__tools {
+   @include codaFont;
+   display: inline-block;
+   font-size: .75em;
+   line-height: 1.5;
+   letter-spacing: .075em;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: $gray;
+   background: $white;
+   border: 1px solid $ltgray;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+.project__tools {
+   margin-bottom: 15px;
+}
+.project__cta {
+   @include capSpace;
+   @include codaFont;
+   .project__link {
+      display: block;
+      padding: 20px;
+      font-size: .75em;
+      line-height: .75;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+      color: $green;
+      text-decoration: none;
+      z-index: 10; 
+	  &:hover {
+		color: #fff;
+        transition: color .3s;
+	  }   
+      &:hover:after {
+         @include smoothText;
+         position: relative;
+         top: 4px; 
+         float: right;
+         color: $white;
+         font-size: 2.5em;
+         line-height: 0;
+         content: '\261B \FE0E';
+      }       
+   }
+	 &:hover {
+		background: $green;
+        transition: background .3s;
+	 }
+}
+/* JQUERY ZOOM */
+
+/* magnifying glass icon */
+.zoom:after {
+   opacity: 0;
+   transition: opacity .3s;
+}
+.zoom:hover:after {
+   content:'';
+   display:block;
+   opacity: 1;
+   width:22px; 
+   height:22px; 
+   position:absolute; 
+   top:5px;
+   right:5px;
+   background:url(../img/icons/icon-zoom.svg);
+   transition: opacity .3s;
+   z-index: 0;
+}
+ 
+.zoom img {
+   display: block;
+   z-index: 1;
+}
+
+.zoom img::selection { background-color: transparent; }
+
+#project__bms img:hover { cursor: url(grab.cur), default; }
+#project__bms img:active { cursor: url(grabbed.cur), default; }

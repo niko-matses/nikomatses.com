@@ -1,0 +1,29 @@
+$blue: #00ADEF;
+$gray: #898989;
+$ltgray: #ebebeb;
+
+$green: #39af84;
+$yellow: #DCE35B;
+$otherblue: #4BDBE7;
+$othergray: #0f0f0f;
+$white: #f9f9f9;
+
+
+@mixin serif {
+   font-family: "rinse", "Coda","Arial",sans-serif;
+}
+@mixin sans { 
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@mixin codaFont {
+  font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@mixin smoothText {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

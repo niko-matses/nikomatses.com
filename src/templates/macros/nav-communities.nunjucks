@@ -1,0 +1,13 @@
+
+<nav class="navbar navbar-expand-sm navbar-light" id="communityNav">
+	<div class="container-fluid">
+		<h1 class="nav__community-name">
+			{% block name %}{% endblock %}
+		</h1>
+		<span class="triangle"></span>
+		<a class="nav__resident-login">Resident Login</a>
+	</div>
+	<a class="navbar__logo js-scroll-trigger" href="/" alt="Paredim Communities">
+		<img src="/assets/img/paredim_logo.svg">
+	</a>
+</nav>

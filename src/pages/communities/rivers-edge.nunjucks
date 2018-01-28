@@ -1,0 +1,80 @@
+---
+data: ['data/featured-communities.json','data/community/rivers.json']
+---
+{% set title = 'Rivers Edge - Waterbury, CT' %}
+{% extends "community.nunjucks" %}
+
+{% block description %}
+<p>Rivers Edge Apartment Homes offers a rare combination of quality, elegance, amenity and value that make it the premier gated community in the Waterbury, Danbury and New Haven areas.</p>
+
+<p>Designed with the charm of English Tudor architecture, Rivers Edge features meticulously landscaped grounds with beautiful flower gardens that offer you Peace and serenity after a long day. Relax at the community swimming pool during hot summer days,
+  and forget about those heating bills in the winter, because your heat and hot water are included in the rent. Our extremely well appointed luxury residences feature spacious closets, wall to wall carpeting, private balcony/patio, and large kitchens.</p>
+<p> The lushly landscaped community offers ample on-site parking as well as covered parking on select homes, secure buildings with intercoms and laundry rooms in each building. Rivers Edge Apartment Homes is conveniently located within walking distance of
+  great shopping, restaurants, theaters and other lifestyle amenities. Just minutes from I-84, Rte. 8 and the University of Connecticut.</p>
+<p>All these wonderful features are further enhanced by Paredim Partners attentive and professional on site management team dedicated to making your stay pleasant and worry free.</p>
+{% endblock %}
+
+{% block propfeatures %}
+<li class="features__list-item">Gated Community</li>
+<li class="features__list-item">Pool</li>
+<li class="features__list-item">Convenient Laundry Centers in Every Building</li>
+<li class="features__list-item">Landscaped Walkways</li>
+<li class="features__list-item">Secure Buildings</li>
+<li class="features__list-item">Ample Parking</li>
+<li class="features__list-item">Walk to Shopping</li>
+<li class="features__list-item">24 Hour Emergency Maintenance</li>
+<li class="features__list-item">Fitness Center</li>
+<li class="features__list-item">Pet Friendly Community</li>
+{% endblock %}
+
+{% block aptfeatures %}
+<li class="features__list-item">Heat &amp; Hot Water Included</li>
+<li class="features__list-item">Walk-in Closets</li>
+<li class="features__list-item">Balcony or Patio</li>
+<li class="features__list-item">Wall to Wall Carpeting</li>
+<li class="features__list-item">Full Appliance Package</li>
+<li class="features__list-item">Cable &amp; Internet Ready</li>
+<li class="features__list-item">Garbage Disposal</li>
+{% endblock %}
+
+{% block floorplantabs %}
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#studio" role="tab">Studio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#1br" role="tab">1BR</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#2br" role="tab">2BR</a>
+  </li>
+{% endblock %}
+
+{% block floorplancards %}
+<div class="tab-pane fade active show" id="studio" role="tabpanel">
+  <ul class="floorplan__card-group">
+    {% for data in studio %}
+      {% include 'partials/floor-plans.nunjucks' %}
+    {% endfor %}
+  </ul>
+</div>
+
+  <div class="tab-pane fade" id="1br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in onebedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="tab-pane fade" id="2br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in twobedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+{% block hours %}
+<li>Mon – Fri  <span>9am — 5pm</span></li>
+<li>Saturday by Appointment</li>
+{% endblock %}

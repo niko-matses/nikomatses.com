@@ -1,0 +1,83 @@
+---
+data: ['data/featured-communities.json','data/community/fairways.json']
+---
+{% set title = 'The Fairways - New Haven, CT' %}
+{% extends "community.nunjucks" %}
+
+{% block description %}
+<p>WELCOME TO THE FAIRWAYS. The Fairways offers gracious townhouse living at affordable prices and forget about those heating bills, at The Fairways your heat and hot water are included in the rent. Our newly remodeled two and three bedroom townhouse residences offer our residents a wonderful place to call home. Fairways offers designer living the affordable way. When touring our townhouses, be sure to notice the wall-to-wall carpeting in your living room.</p>
+<p>Our state of the art kitchens have been redesigned with beautiful oak cabinets, frost-free refrigerators, electric range stoves, dishwashers, and plenty of counter space.The second level is accented with fine hardwood floors, for that final elegant touch. The bathroom is completely remodeled with ceramic tile, oak vanity, and a wonderful light bar to finish it off.</p>
+<p>The lushly landscaped community offers ample on-site parking, private entrances with patio areas and modern laundry facilities right outside your door. The Fairways is conveniently located minutes from 1-91 and 1-95, as well as downtown New Haven and just minutes away from golf, the shoreline, and great nearby shopping centers.</p>
+<p> All these wonderful features are further enhanced by Paredim Partners' attentive and professional on site management team dedicated to making your stay pleasant and worry free.</p>
+{% endblock %}
+
+{% block propfeatures %}
+<li class="features__list-item">Private Entrance to all Apartment Homes</li>
+<li class="features__list-item">Hardwood Floors</li>
+<li class="features__list-item">Townhouse style floor plans</li>
+<li class="features__list-item">Fully Applianced Kitchens with Dishwasher</li>
+<li class="features__list-item">Large Walk-in Closets</li>
+<li class="features__list-item">Sprawling well-manicured landscaping</li>
+<li class="features__list-item">Conveniently located to shopping</li>
+<li class="features__list-item">Public Transportation</li>
+<li class="features__list-item">Located across the street from public golf course</li>
+<li class="features__list-item">High Speed Internet</li>
+<li class="features__list-item">24 Hour Emergency Maintenance</li>
+<li class="features__list-item">Heat & Hot Water Included</li>
+<li class="features__list-item">Onsite Laundry</li>
+{% endblock %}
+
+{% block aptfeatures %}
+<li class="features__list-item">Walk-in closets</li>
+<li class="features__list-item">Dishwashers</li>
+<li class="features__list-item">Hardwood Floors</li>
+<li class="features__list-item">Wall to Wall Carpeting</li>
+<li class="features__list-item">Walking Trails</li>
+<li class="features__list-item">High Speed Internet Available</li>
+<li class="features__list-item">Individual Patios</li>
+{% endblock %}
+
+{% block floorplantabs %}
+<li class="nav-item">
+  <a class="nav-link active" data-toggle="tab" href="#2br" role="tab">2BR</a>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#3br" role="tab">3BR</a>
+  </li>
+{% endblock %}
+
+{% block floorplancards %}
+<div class="tab-pane fade active show" id="2br" role="tabpanel">
+  <ul class="floorplan__card-group">
+    {% for data in twobedrooms %}
+      {% include 'partials/floor-plans.nunjucks' %}
+    {% endfor %}
+  </ul>
+</div>
+  <div class="tab-pane fade" id="3br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in threebedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+{% block nearby %}
+  {% for data in featured %}
+    <figure class="col-md-4">
+        <a class="featured-community__card" href="{{data.slug}}">
+        <div class="featured-community__thumbnail" style="background-image:url({{data.thumbnail}})"></div>
+        <ul class="featured-community__info">
+            <li><h3 class="featured-community__name">{{data.title}}</h3></li>
+            <li class="featured-community__place">{{data.city}}</li>
+            <li class="featured-community__rent">Starting at <strong>${{data.rent}}<sup>*</sup></strong></li>
+        </ul>
+        </a>
+    </figure>
+  {% endfor %}
+{% endblock %}
+
+{% block hours %}
+<li>Mon – Fri  <span>9am — 5pm</span></li>
+{% endblock %}
