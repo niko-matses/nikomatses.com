@@ -1,0 +1,22 @@
+{% include 'partials/html-header.nunjucks'%}
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{site.googletagmanager_id}}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% import 'macros/navbar.nunjucks' as nav %}
+
+    {% block content %}
+      Sorry, no content :(
+    {% endblock %}
+
+    <p class="disclaimer-community">* Rents and specials subject to change. Please call for details.</p>
+
+    {% include 'macros/footer.nunjucks' %}
+    {% include 'partials/footer-scripts.nunjucks' %}
+
+  </body>
+
+</html>

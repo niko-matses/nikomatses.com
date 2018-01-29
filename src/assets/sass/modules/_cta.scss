@@ -1,0 +1,34 @@
+.cta {
+	width: 85%;
+    @include codaFont;
+	font-size: 16px;
+	display:block;
+	padding: 15px 30px;
+   	color: $green;
+	background: $othergray;	
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+    margin: 50px auto 0;
+    letter-spacing: 2px;
+    border: 1px solid $green;
+   @media (min-width: 640px) {
+      max-width: 300px;
+      width: 50%
+   }
+}
+.anchor {
+  visibility:hidden;
+  padding-top:100px;
+  margin: 0;    
+}
+.cta:hover {
+   	color:$green;
+    background: $white;
+}
+.contact__cta {
+  display: inline-block;
+  margin: 15px;
+}

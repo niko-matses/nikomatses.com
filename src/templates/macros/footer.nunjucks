@@ -1,0 +1,35 @@
+<footer class="footer" id="section6">
+  <section id="contact" name="contact">
+    <a class="cta contact__cta" href="tel:9782890008">Call</a>
+    <a class="cta contact__cta" href="mailto:gigs@nikomatses.com">Email</a>
+    <span class="copyright">&copy;2017 Niko Matses / 978.289.0008 / gigs@nikomatses.com</span>
+  </section>
+  <ul class="social">
+    <li class="social__icon">
+      <a class="icon-instagram" target="_blank" href="https://www.instagram.com/nik0media">
+        <img src="img/icons/icon-instagram.svg" alt="Instagram">
+      </a>
+    </li>
+    <li class="social__icon">
+      <a class="icon-twitter" target="_blank" href="https://twitter.com/nik0media">
+        <img src="img/icons/icon-twitter.svg" alt="Twitter">
+      </a>
+    </li>
+    <li class="social__icon">
+      <a class="icon-github" target="_blank" href="https://github.com/niko-matses">
+        <img src="img/icons/icon-github.svg" alt="GitHub">
+      </a>
+    </li>
+    <li class="social__icon">
+      <a class="icon-vimeo" target="_blank" href="https://vimeo.com/nikomedia">
+        <img src="img/icons/icon-vimeo.svg" alt="Vimeo">
+      </a>
+    </li>
+    <li class="social__icon">
+      <a class="icon-youtube" target="_blank" href="https://www.youtube.com/channel/UCASgBK81dWMQEzc10iE9eyA">
+        <img src="img/icons/icon-youtube.svg" alt="YouTube">
+      </a>
+    </li>
+  </ul>
+
+</footer>

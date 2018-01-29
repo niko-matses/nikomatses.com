@@ -1,0 +1,79 @@
+---
+data: ['data/featured-communities.json','data/community/windsor.json']
+---
+{% set title = 'Windsor Crossing - Bloomfield, CT' %}
+{% extends "community.nunjucks" %}
+
+{% block description %}
+<p>WELCOME TO WINDSOR CROSSING. At Windsor Crossing, you will experience comfort, style, and convenience in one of our superior townhouse style units. Our spacious two and three bedroom townhouse residences are designed to provide the ultimate in contemporary living and feature Free Heat and Hot Water, direct access garages, private entrances, and elegant floor plans with eat in kitchens, formal dining rooms and 1 and 1/2 baths.
+<p>When touring our homes, be sure to notice our fully applianced state of the art eat-in kitchens with oak-trimmed cabinets, and plenty of counter space. Each unit also features abundant closet space and full private basements with washer dryer hookups.</p>
+<p>At Windsor Crossing you will receive outstanding value and impeccable service. This quiet and serene community is well located only minutes from both I-91 and I-84, with easy access to area shopping plazas, restaurants and entertainment sites.</p>
+<p>All these wonderful features are further enhanced by Paredim Communities attentive and professional management team and on-site 24 hour maintenance dedicated to making your home pleasant and worry free.</p>
+{% endblock %}
+
+{% block propfeatures %}
+<li class="features__list-item">Attached Garage</li>
+<li class="features__list-item">Private cul de sac</li>
+<li class="features__list-item">Laundry Room</li>
+<li class="features__list-item">Playground</li>
+<li class="features__list-item">Covered Parking</li>
+<li class="features__list-item">24 Hour Emergency Maintenance</li>
+{% endblock %}
+
+{% block aptfeatures %}
+<li class="features__list-item">Walk-in closets </li>
+<li class="features__list-item">Eat in Kitchens</li>
+<li class="features__list-item">High Speed Internet Available</li>
+<li class="features__list-item">Refrigerator</li>
+<li class="features__list-item">Cable Ready</li>
+<li class="features__list-item">Washer &amp; Dryer Hookups in Unit</li>
+<li class="features__list-item">Garbage Disposal</li>
+<li class="features__list-item">Yard</li>
+<li class="features__list-item">Dishwasher</li>
+{% endblock %}
+
+{% block floorplantabs %}
+<li class="nav-item">
+  <a class="nav-link active" data-toggle="tab" href="#2br" role="tab">2BR</a>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#3br" role="tab">3BR</a>
+  </li>
+{% endblock %}
+
+{% block floorplancards %}
+<div class="tab-pane fade active show" id="2br" role="tabpanel">
+  <ul class="floorplan__card-group">
+    {% for data in twobedrooms %}
+      {% include 'partials/floor-plans.nunjucks' %}
+    {% endfor %}
+  </ul>
+</div>
+  <div class="tab-pane fade" id="3br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in threebedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+{% block nearby %}
+  {% for data in featured %}
+    <figure class="col-md-4">
+        <a class="featured-community__card" href="{{data.slug}}">
+        <div class="featured-community__thumbnail" style="background-image:url({{data.thumbnail}})"></div>
+        <ul class="featured-community__info">
+            <li><h3 class="featured-community__name">{{data.title}}</h3></li>
+            <li class="featured-community__place">{{data.city}}</li>
+            <li class="featured-community__rent">Starting at <strong>${{data.rent}}<sup>*</sup></strong></li>
+        </ul>
+        </a>
+    </figure>
+  {% endfor %}
+{% endblock %}
+
+{% block hours %}
+<li>Mon – Fri  <span>9am — 5pm</span></li>
+<li>Showings by appointment only</li>
+{% endblock %}

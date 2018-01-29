@@ -1,0 +1,51 @@
+---
+data: ['data/featured-communities.json']
+---
+{% set title = 'Apartment Living Done Right' %}
+{% extends 'layout.nunjucks' %}
+{% block title %}<title> {{siteTitle}} </title>{% endblock %}
+{% block canonical %} <link rel="canonical" href="{{siteUrl}}"> {% endblock %}
+
+{% block content %}
+
+{{nav.active('home')}}
+
+{% include 'partials/carousel-home.nunjucks' %}
+
+<main>
+    <section class="section__callout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="callout__headline">Apartment Living Done Right<span class="tm">&trade;</span></h2>
+                </div>
+                <div class="col-md-4">
+                    <a class="callout__cta" href="/about">
+                        <span>Find Out More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__intro container">
+        <p class="intro__paragraph" style="text-align:center">Paredim Communities professionally manages a diverse range of apartment communities located throughout Connecticut in the Fairfield, New Haven and Hartford areas.</p>
+    </section>
+    <section class="section__featured-communities container">
+      <h2 class="section__heading">Featured Communities</h2>
+      <div class="row">
+      {% for data in featured %}
+          <figure class="col-md-4">
+              <a class="featured-community__card" href="{{data.slug}}">
+              <div class="featured-community__thumbnail" style="background-image:url({{data.thumbnail}})"></div>
+              <ul class="featured-community__info">
+                  <li><h3 class="featured-community__name">{{data.title}}</h3></li>
+                  <li class="featured-community__place">{{data.city}}</li>
+                  <li class="featured-community__rent">Starting at <strong>${{data.rent}}</strong> *</li>
+              </ul>
+              </a>
+          </figure>
+      {% endfor %}
+      </div>
+    </section>
+</main>
+{% endblock %}

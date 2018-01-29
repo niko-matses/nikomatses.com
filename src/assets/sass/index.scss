@@ -1,0 +1,18 @@
+@import 'helpers/variables';
+@import 'helpers/reset';
+@import 'helpers/queries';
+@import 'helpers/video';
+
+@import 'modules/main';
+@import 'modules/typography';
+@import 'modules/cta';
+@import 'modules/animation';
+
+@import 'components/nav';
+@import 'components/vertical-nav';
+@import "components/hero";
+@import 'components/projects';
+@import 'components/experience'; 
+@import 'components/footer';
+
+//take some cool stuff in the /scss directory

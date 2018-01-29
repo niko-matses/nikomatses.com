@@ -1,0 +1,81 @@
+---
+data: ['data/featured-communities.json','data/community/soundview.json']
+---
+{% set title = 'The Soundview At Savin Rock, West Haven, CT' %}
+{% extends "community.nunjucks" %}
+
+{% block description %}
+<p>DON’T JUST DREAM IT… LIVE IT when you choose to call The Soundview at Savin Rock your new home. Our community features spectacular and luxurious 1 and 2 bedroom apartment homes. You will enjoy the breathtaking ocean views from every room in your apartment home and soak in the refreshing sea breeze on your private balcony or patio.
+</p>
+
+<p>Expansive floor plans with plenty of oversized closets, in unit washer/dryer, euro cabinetry with soft close drawers & doors and wall to wall carpet are just a few of the remarkable upgrades to our apartment homes. You will save on electricity with our energy efficient stainless steel appliances, programmable ultra-quiet heating & cooling systems, and our brand new windows which allow ample natural light.</p>
+
+<p>You will fall in love with our exclusive amenities which include our Aqualine fitness center, outdoor pool, and barbeque lounge area. These are just some of the reasons to call The Soundview your new residence. Other reasons include additional storage, package acceptance and delivery, superior on-site management, 24 hour maintenance, keyless building access, dual elevators and covered garage parking for residents and guests.</p>
+
+<p>The Soundview at Savin Rock is conveniently located within minutes of I-95, New Haven, Yale University and the Metro-North train station to make your commute worry free. You will also enjoy access to the beach, mile long promenade boardwalk and great local restaurants all within walking distance of your new home.</p>
+
+<p>All these wonderful features are further enhanced by Paredim Communities attentive and professional on site management team dedicated to making your stay pleasant and worry free.</p>
+{% endblock %}
+
+{% block propfeatures %}
+<li class="features__list-item">Located on Long Island Sound with convenient beach access</li>
+<li class="features__list-item">Easy access to Savin Rock Trail promenade</li>
+<li class="features__list-item">Walk to shopping and restaurants</li>
+<li class="features__list-item">Beautifully landscaped grounds</li>
+<li class="features__list-item">Contemporary high-rise design with elevator</li>
+<li class="features__list-item">Aqualine fitness, pool and community area</li>
+<li class="features__list-item">Outdoor lounge and BBQ</li>
+<li class="features__list-item">State of the art keyless building access and security system</li>
+<li class="features__list-item">Parking garage with gated entry</li>
+<li class="features__list-item">Designer common area finishes with specialty lighting</li>
+<li class="features__list-item">Resident storage available</li>
+<li class="features__list-item">24 Hour Emergency Maintenance</li>
+{% endblock %}
+
+{% block aptfeatures %}
+<li class="features__list-item">Ocean views from living room, kitchen and bedrooms</li>
+<li class="features__list-item">Private balcony or patio</li>
+<li class="features__list-item">Spacious floors with plenty of oversized closets</li>
+<li class="features__list-item">Designer Euro cabinetry with soft close drawers and doors</li>
+<li class="features__list-item">General Electric Stainless steel, energy-star appliances</li>
+<li class="features__list-item">In-unit washer and dryer</li>
+<li class="features__list-item">Energy efficient ultra-quiet programmable heating and cooling systems</li>
+<li class="features__list-item">Wall-to-wall carpeting</li>
+<li class="features__list-item">Cable and internet ready</li>
+<li class="features__list-item">Pet friendly</li>
+{% endblock %}
+
+{% block floorplantabs %}
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#1br" role="tab">1BR</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#2br" role="tab">2BR</a>
+  </li>
+{% endblock %}
+
+{% block floorplancards %}
+  <div class="tab-pane fade active show" id="1br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in onebedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="tab-pane fade" id="2br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in twobedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+{% block hours %}
+<li>Mon – Fri  <span>10am — 5pm</span></li>
+{% endblock %}
+
+{% block chatwidget %}
+<script src="https://uc-widget.realpageuc.com/widget?wid=1MdWhz30Z3wL2DtGyW4rlD9P"
+type="text/javascript"></script>
+{% endblock %}

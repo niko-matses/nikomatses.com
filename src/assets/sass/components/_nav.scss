@@ -1,0 +1,47 @@
+.nav {
+   @include codaFont;
+   text-align: center;
+   right: 0;
+   width: 100%;
+   font-size: 1.25em;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   padding: 15px;
+   color: #fff;
+   background: $green;
+   z-index: 3;
+}
+.nav__menu {
+   text-align: right;
+}
+.nav__menu-item {
+   color: $white;
+   display: inline-block;
+   padding: 15px;
+   font-family: "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 1px;   
+   @media (min-width:640px) {
+      padding: 30px;
+      font-size: 1em;
+   }
+}
+.nav__menu-link {
+    @include smoothText;
+    color: $white;
+    text-decoration: none;
+    transition: color .3s;
+    &:hover {
+      color: #fff !important;
+    }
+}
+
+.nav__menu-item--logo {
+   position: relative;
+   display: inline;
+   left: 0;
+   font-size: 18px;
+   font-family: "Averia Sans Libre", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   letter-spacing: 5px;
+}

@@ -1,0 +1,73 @@
+---
+data: ['data/featured-communities.json','data/community/woodbury.json']
+---
+{% set title = 'Woodbury Knoll - Woodbury, CT' %}
+{% extends "community.nunjucks" %}
+
+{% block description %}
+<p>Woodbury Knoll offers you a mixture of the beauty and serenity of a country setting and the convenience and amenity of a full service residential community. Woodbury Knoll is a pet friendly community where you can take a stroll around the beautiful pond located in front of the community or across the street on the walking trails.</p>
+<p>Centrally located in the foothills of Litchfield County, the community is located minutes from the center of Woodbury with its excellent restaurants and quaint shops and antique stores. The community has excellent access to Rt. I-84 which provides easy access to Hartford, Danbury and Waterbury, as well as major commercial business centers and numerous cultural and entertainment attractions of the Litchfield area. Our spacious apartments feature wall to wall carpeting, kitchens with dishwashers, patio and deck spaces and ample closet space.</p>
+<p>All these wonderful features are further enhanced by Paredim Partners attentive and professional on site management team dedicated to making your stay pleasant and worry free.</p>
+{% endblock %}
+
+{% block propfeatures %}
+<li class="features__list-item">Laundry Room</li>
+<li class="features__list-item">Walking Trails</li>
+<li class="features__list-item">Ample on Site Parking</li>
+<li class="features__list-item">Pond with Gazebo</li>
+<li class="features__list-item">24 Hour Emergency Maintenance</li>
+<li class="features__list-item">Bark Park</li>
+{% endblock %}
+
+{% block aptfeatures %}
+<li class="features__list-item">Walk-in closets</li>
+<li class="features__list-item">Dishwasher</li>
+<li class="features__list-item">Yard</li>
+<li class="features__list-item">Vaulted Ceiling</li>
+<li class="features__list-item">Wall to Wall Carpeting</li>
+<li class="features__list-item">Balcony, Deck, Patio</li>
+<li class="features__list-item">Refrigerator</li>
+<li class="features__list-item">Cable Ready</li>
+<li class="features__list-item">High Speed Internet Available</li>
+{% endblock %}
+
+{% block floorplantabs %}
+<li class="nav-item">
+  <a class="nav-link active" data-toggle="tab" href="#studio" role="tab">Studio</a>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#1br" role="tab">1BR</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#2br" role="tab">2BR</a>
+  </li>
+{% endblock %}
+
+{% block floorplancards %}
+<div class="tab-pane fade active show" id="studio" role="tabpanel">
+  <ul class="floorplan__card-group">
+    {% for data in studio %}
+      {% include 'partials/floor-plans.nunjucks' %}
+    {% endfor %}
+  </ul>
+</div>
+  <div class="tab-pane fade" id="1br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in onebedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="tab-pane fade" id="2br" role="tabpanel">
+    <ul class="floorplan__card-group">
+      {% for data in twobedrooms %}
+        {% include 'partials/floor-plans.nunjucks' %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+{% block hours %}
+<li>Mon – Fri  <span>9am — 5pm</span></li>
+<li>Showings by appointment only</li>
+{% endblock %}
