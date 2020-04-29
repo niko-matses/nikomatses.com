@@ -1,12 +1,10 @@
-<!doctype html>
-
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title>Niko Matses | UX Designer &amp; Web Developer</title>
+  <title>Niko Matses | Web Developer &amp; UX Designer</title>
   <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
@@ -49,12 +47,31 @@
       <span class="letters">Niko Matses</span>
       </span>
     </ul>
+    <nav class="scrollto-nav nav__menu">
+      <ul class="nav__menu-items  ml11">
+        <li class="nav__item text-wrapper">
+          <a href="#section2" data-number="2"><span class="nav__link letters">About</span></a>
+        </li>
+        <li class="nav__item text-wrapper">
+          <a href="#section3" data-number="3"><span class="nav__link letters">Projects</span></a>
+        </li>
+        <li class="nav__item text-wrapper">
+          <a href="#section4" data-number="4"><span class="nav__link letters">Experience</span></a>
+        </li>
+        <li class="nav__item text-wrapper">
+          <a href="#section5" data-number="5"><span class="nav__link letters">Skills</span></a>
+        </li>
+        <li class="nav__item text-wrapper">
+          <a href="#section6" data-number="6"><span class="nav__link letters">Contact</span></a>
+        </li>
+      </ul>
+    </nav>
   </nav>
   <header class="hero hero__bg-image--chalkboard" id="section1">
     <div class="hero__overlay"></div>
     <h1 class="hero__headline ml12">UX Designer <span class="letters">&amp;</span> Web Developer</h1>
   </header>
-  <nav id="cd-vertical-nav">
+  <nav id="cd-vertical-nav" class="cd-vertical-nav scrollto-nav">
     <ul>
       <li>
         <a href="#section1" data-number="1">
@@ -101,97 +118,158 @@
       <section class="section section__snapshot" id="section2">
         <h2 class="main-content__headline">Hello,</h2>
 
-        <p class="main-content__lead-paragraph">I'm a full-stack developer focused on front-end mobile design. My approach advocates Design Thinking and User Experience methods to build the best digital products possible.</p>
+        <p class="main-content__lead-paragraph">I'm a full-stack developer focused on front-end mobile responsive design. My approach advocates Design Thinking and User Experience planning to ensure that the best possible product gets built.</p>
       </section>
       <section class="section section__projects" id="section3">
         <h2 class="main-content__headline">Recent Projects</h2>
 
-        <p class="main-content__lead-paragraph">Here are some cool web apps I've worked on.</p>
-
-        <ul class="main-content__unordered-list">
-
-          <li class="project__card">
-            <div class="zoom" id="project__bms"><img class="project__featured-image" src="img/projects/featured_dambruoso-law.jpg">
+        <p class="main-content__lead-paragraph">Here are some web apps I helped to design, build, launch and maintain.</p>
+      </div>
+        <ul class="main-content__unordered-list" style="margin: auto; text-align: center;">
+          <li class="project__card" style="background: #a3c869;">
+            <div class="project__background" id="project__acorn" style="background-image:url(img/projects/featured_acorn.jpg)">
               <ul class="project__details">
-                <li class="project__title">D'ambruoso Law</li>
-                <li class="project__description">Boston Law Firm specializing in Estate Law, Business Law, and Real Estate transactions. In just one month I developed the responsive front-end using the Nunjucks template engine.</li>
-                <li class="project__role"><span class="project__label">Hats:</span> Mobile UI Designer, Full Stack Developer</li>
-                <li class="project__tools"><span class="project__label">Tools:</span> HTML, Gulp, SASS, JS, Nunjucks</li>
+                <li class="project__title">Acorn Health</li>
+                <li class="project__description">Connecting families with an ABA network to find care for children with autism.</li>
+                <li class="project__role"><span class="project__label">Features:</span>Zip & Geolocation Search, State &amp; Local Resources</li>
+                <li class="project__role"><span class="project__label">Role:</span>Full-Stack Developer</li>
+                <li class="project__tools"><span class="project__label">Tools:</span> HTML, Gulp, SASS, JS, Timber</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="https://acornhealth.com" target="_blank">Visit Website</a>
+                </ul>
               </ul>
             </div>
-            <ul class="project__cta">
-              <a class="project__link" href="http://dambruosolaw.com" target="_blank">Visit Website</a>
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="https://flinggolf.com" target="_blank">Visit Website</a>
             </ul>
           </li>
-          <li class="project__card">
-            <div class="zoom" id="project__lwc"><img class="project__featured-image" src="img/projects/featured_long-wharf-capital.jpg">
+
+          <li class="project__card" style="background:#197ab1;">
+            <div class="project__background" id="project__ideal" style="background-image:url(img/projects/featured_idealcap.jpg)">
               <ul class="project__details">
-                <li class="project__title">Long Wharf Capital</li>
-                <li class="project__description">Real estate investment firm in Boston, MA. I developed a unique WordPress theme with custom post types for the staff and investment portfolio.</li>
-                <li class="project__role"><span class="project__label">Hats:</span> Mobile UI Designer, Full-Stack Developer</li>
-                <li class="project__tools"><span class="project__label">Tools:</span>HTML, Gulp, SASS, Wordpress, Timber</li>
+                <li class="project__title">Ideal Cap Group</li>
+                <li class="project__description">A fresh look for a family-owned firm with decades of investment experience.</li>
+                <li class="project__role"><span class="project__label">Features:</span>UI Animation, Portfolio, Property Map</li>
+                <li class="project__role"><span class="project__label">Role:</span>Front-End Developer</li>
+                <li class="project__tools"><span class="project__label">Tools:</span> React, Gatsby, JSX, SASS, JS</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="https://idealcapgroup.com" target="_blank">Visit Website</a>
+                </ul>
               </ul>
             </div>
-            <ul class="project__cta">
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="https://flinggolf.com" target="_blank">Visit Website</a>
+            </ul>
+          </li>
+          <li class="project__card" style="background:#ffca00;">
+            <div class="project__background" id="project__flinggolf" style="background-image:url(img/projects/featured_flinggolf.jpg)">
+              <ul class="project__details">
+                <li class="project__title">FlingGolf</li>
+                <li class="project__description">Getting today's generation to try this sport's new spin on traditional golf.</li>
+                <li class="project__role"><span class="project__label">Features:</span>Custom eCommerce, Course Locator, Event Calendar</li>
+                <li class="project__role"><span class="project__label">Role:</span> UX Designer, Front-End Developer</li>
+                <li class="project__tools"><span class="project__label">Tools:</span> HTML, SASS, Shopify, ThemeKit, Liquid</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="https://flinggolf.com" target="_blank">Visit Website</a>
+                </ul>
+              </ul>
+            </div>
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="https://flinggolf.com" target="_blank">Visit Website</a>
+            </ul>
+          </li>
+		  <li class="project__card" style="background:#bbd4f6;">
+            <div class="project__background" id="project__lwc" style="background-image:url(img/projects/featured_long-wharf-capital.jpg)">
+              <ul class="project__details">
+                <li class="project__title">Long Wharf Capital</li>
+                <li class="project__description">Building trust between real estate investors and this Boston-based team.</li>
+                <li class="project__role"><span class="project__label">Features:</span>UI Animation, Portfolio, CMS, Site Search</li>
+                <li class="project__role"><span class="project__label">Role:</span> Mobile UI Designer, Full-Stack Developer</li>
+                <li class="project__tools"><span class="project__label">Tools:</span>HTML, Gulp, SASS, JS, Timber</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="http://longwharf.com" target="_blank">Visit Website</a>
+                </ul>
+              </ul>
+            </div>
+            <ul class="project__cta" style="display: none;">
               <a class="project__link" href="http://longwharf.com" target="_blank">Visit Website</a>
             </ul>
           </li>
-          <li class="project__card">
-            <div class="zoom" id="project__ecc"><img class="project__featured-image" src="img/projects/featured_edgewood-country-club--purple.jpg">
+          <li class="project__card" style="background:#08b5af;">
+            <div class="project__background" id="project__360" style="background-image:url(img/projects/featured_primary360.jpg)">
               <ul class="project__details">
-                <li class="project__title">Edgewood Country Club</li>
-                <li class="project__description">An inclusive club, golf course, and wedding/event venue in Edgewood. I developed the front-end framework and helped design the user interface.</li>
-                <li class="project__role"><span class="project__label">Hats:</span> Mobile UI Designer, Full-Stack Developer</li>
+                <li class="project__title">Primary360</li>
+                <li class="project__description">Transforming how an integrated marketing agency presents itself online.</li>
+                <li class="project__role"><span class="project__label">Features:</span>UI Animation, Portfolio, Blog, Bespoke Theme</li>
+                <li class="project__role"><span class="project__label">Role:</span> UX Designer, Full-Stack Developer</li>
                 <li class="project__tools"><span class="project__label">Tools:</span> HTML, Gulp, SASS, JS, Nunjucks</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="https://primary360.com" target="_blank">Visit Website</a>
+                </ul>
               </ul>
             </div>
-            <ul class="project__cta"><a class="project__link" href="http://edgewoodnj.com" target="_blank">Visit Website</a>
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="https://primary360.com" target="_blank">Visit Website</a>
             </ul>
-          </li>
-          <li class="project__card">
-            <div class="zoom" id="project__trc"><img class="project__featured-image" src="img/projects/featured_renew-collaborative.jpg">
-              <ul class="project__details">
-                <li class="project__title">The Renew Collaborative</li>
-                <li class="project__description">Now in testing, this online resource will be used by nonprofits nationwide to implement HomeStart's proven eviction-prevention strategy.</li>
-                <li class="project__role"><span class="project__label">Hats:</span> Mobile UI Designer, Front-End Developer</li>
-                <li class="project__tools"><span class="project__label">Tools:</span> HTML, Gulp, SASS, JS, Nunjucks</li>
-              </ul>
-            </div>
-            <ul class="project__cta"><a class="project__link" href="http://primaryman.com/renew-collaborative" target="_blank">Visit Website</a>
-            </ul>
-          </li>
-          <li class="project__card">
-            <div class="zoom" id="project__gpg"><img class="project__featured-image" src="img/projects/featured_give-play-for-good.jpg">
+          </li> 
+          <li class="project__card" style="background:#f2a218;">
+            <div class="project__background" id="project__gpg" style="background-image:url(img/projects/featured_give-play-for-good.jpg)">
               <ul class="project__details">
                 <li class="project__title">Give Play For Good</li>
-                <li class="project__description">The landing page for Greensboro Childrens Museum's media campaign, Give Play For Good. I built the page and created the logo animation used in TV commercial and digital ads.</li>
-                <li class="project__role"><span class="project__label">Hats:</span> Mobile UI Designer, Full-Stack Developer, Motion Designer</li>
+                <li class="project__description">Gathering donations for the Greensboro Children's Museum with our campaign, Give Play For Good.</li>
+                <li class="project__role"><span class="project__label">Role:</span> Mobile UI Designer, Motion Designer, Developer</li>
                 <li class="project__tools"><span class="project__label">Tools:</span> Wireframe, HTML, SASS, JS, Premiere Pro</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="http://giveplayforgood.org" target="_blank">Visit Website</a>
+                </ul>
               </ul>
             </div>
-            <ul class="project__cta"><a class="project__link" href="http://giveplayforgood.org" target="_blank">Visit Website</a>
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="http://giveplayforgood.org" target="_blank">Visit Website</a>
             </ul>
           </li>
-          <li class="project__card">
-            <div class="zoom" id="project__hst"><img class="project__featured-image" src="img/projects/featured_homestart.jpg">
+          <li class="project__card" style="background:#f4f5fa;">
+            <div class="project__background" id="project__dlw" style="background-image:url(img/projects/featured_dambruoso-law.jpg)">
               <ul class="project__details">
-                <li class="project__title">HomeStart</li>
-                <li class="project__description">A nonprofit seeking to eliminate homelessness in Boston. I was honored to be UX designer, reorganize and redesign the site visually before moving on to development.</li>
-                <li class="project__role"><span class="project__label">Hats:</span> UX &amp; UI Designer, Front-End Developer</li>
-                <li class="project__tools"><span class="project__label">Tools:</span> Wireframe, HTML, CSS, WordPress, Photoshop</li>
+                <li class="project__title">D'ambruoso Law</li>
+                <li class="project__description">Advising prospects of this small firm on matters of Estate Planning and Business Law.</li>
+                <li class="project__role"><span class="project__label">Role:</span> Mobile UI Designer, Full-Stack Developer</li>
+                <li class="project__tools"><span class="project__label">Tools:</span> HTML, Gulp, SASS, JS, Nunjucks</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="http://dambruosolaw.com" target="_blank">Visit Website</a>
+                </ul>
               </ul>
             </div>
-            <ul class="project__cta"><a class="project__link" href="http://homestart.org" target="_blank">Visit Website</a>
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="http://dambruosolaw.com" target="_blank">Visit Website</a>
+            </ul>
+          </li>
+          <li class="project__card" style="background:#073a55;">
+            <div class="project__background" id="project__wmp" style="background-image:url(img/projects/featured_woodmont-properties.jpg)">
+              <ul class="project__details">
+                <li class="project__title">Woodmont Properties</li>
+                <li class="project__description">Promoting partnership for a real estate company now in business over half a century.</li>
+                <li class="project__role"><span class="project__label">Features:</span>Property Filter, CMS, Bespoke Theme</li>
+                <li class="project__role"><span class="project__label">Role:</span> Mobile UI Designer, Full Stack Developer</li>
+                <li class="project__tools"><span class="project__label">Tools:</span> HTML, Gulp, SASS, JS, Timber</li>
+                <ul class="project__cta">
+                  <a class="project__link" href="https://woodmontproperties.com" target="_blank">Visit Website</a>
+                </ul>
+              </ul>
+            </div>
+            <ul class="project__cta" style="display: none;">
+              <a class="project__link" href="https://woodmontproperties.com" target="_blank">Visit Website</a>
             </ul>
           </li>
         </ul>
       </section>
+      <div class="main-content__margins">
       <section class="section section__experience" id="section4">
         <h3 class="main-content__headline">Past Experience</h3>
         <ul>
           <li class="main-content__paragraph">
             <img class="skill__icon" src="img/icons/icon_window.svg">
-            <h3 class="main-content__subhead">2002 - 2006</h3> Computer science and programming courses. My first interactive design applications date back to 2003 when Flash was all the rage.</li>
+            <h3 class="main-content__subhead">2002 - 2006</h3>I began building applications in my spare time when Flash was all the rage. I later fell in love with my first computer science and programming courses.</li>
           <li class="main-content__paragraph">
             <img class="skill__icon" src="img/icons/icon_globe.svg">
             <h3 class="main-content__subhead">2007 - 2011</h3> I got started as a freelance designer and web developer in 2007, networking and learning more new skills in the field year after year.</li>
@@ -200,13 +278,13 @@
             <h3 class="main-content__subhead">2012</h3> For the Summer I was an ID Tech Camps instructor of Photography and Web Development courses to kids and teens on the MIT campus in Cambridge, MA.</li>
           <li class="main-content__paragraph">
             <img class="skill__icon" src="img/icons/icon_card.svg">
-            <h3 class="main-content__subhead">2013 - Today</h3> I've been employed as a web developer at Primary since April 2013, and was promoted to web department manager in 2015.</li>
+            <h3 class="main-content__subhead">2013 - 2020</h3>My first agency experience began at Primary Design as a Junior Developer. I learned so much while too helping Primary grow over seven years.</li>
           <li class="main-content__paragraph">
             <img class="skill__icon" src="img/icons/icon_trophy.svg">
-            <h3 class="main-content__subhead">2016</h3> In 2016 I won a bronze Hatch Award for the landing page design of Martha's Vineyard Dressing Company.</li>
+            <h3 class="main-content__subhead">2016</h3>As my expanding role in the planning of Web projects matured, I earned an official title of (the agency's first) UX Designer!</li>
           <li class="main-content__paragraph">
             <img class="skill__icon" src="img/icons/icon_bulb.svg">
-            <h3 class="main-content__subhead">2017</h3>While mainly a full-stack web developer I continue to study, practice and teach the benefits of UX Design.</li>
+            <h3 class="main-content__subhead">2020</h3>Today, I freelance full-time as a UX Designer &amp; Front-End Developer, seeking future work with a fun and talented digital product team.</li>
         </ul>
       </section>
       <section class="section section__skills" id="section5">
@@ -222,10 +300,10 @@
         <p class="main-content__paragraph">Handling server-side duties like hosting, DNS, databases, SSL certificates and SEO best practices has been my job for over 50 web products.</p>
 
         <h3 class="main-content__subhead"><img class="skill__icon" src="img/icons/icon_branch.svg">GIT &amp; Github</h3>
-        <p class="main-content__paragraph">I've pushed over 300 commits to GitHub in the past year. I know my way around Terminal, GitHub.com and Git to collaborate with a team of developers.</p>
+        <p class="main-content__paragraph">I've pushed over 350 commits in the past year. I know my way around Terminal, Bitbucket.com, GitHub.com and Git to collaborate with a team of developers.</p>
 
-        <h3 class="main-content__subhead"><img class="skill__icon" src="img/icons/icon_hourglass.svg">GULP</h3>
-        <p class="main-content__paragraph">Gulp has saved countless hours from my development workflow. It can be used to live-update, prefix, preprocess, concatenate, minify, template, theme, and more.</p>
+        <h3 class="main-content__subhead"><img class="skill__icon" src="img/icons/icon_hourglass.svg">Task Runners</h3>
+        <p class="main-content__paragraph">Gulp, Webpack etc. have saved countless hours from my development workflow. They can be used to live-update, prefix, preprocess, concatenate, minify, template, theme, and more.</p>
       </section>
       <section class="section section__skills">
         <h2 class="main-content__headline">Design Skills</h2>
@@ -240,7 +318,7 @@
 
         <h3 class="main-content__subhead"><img class="skill__icon" src="img/icons/icon_mobile.svg">Responsive / Web</h3>
 
-        <p class="main-content__paragraph">Always mobile-first, BrowserStack and device testing assist in my development workflow. When I'm crafting web components and design systems, no screen size goes overlooked.</p>
+        <p class="main-content__paragraph">Always mobile-first, BrowserSync device testing aids in my quality assessments. When I'm crafting web components and design systems, no screen size goes overlooked.</p>
 
         <h3 class="main-content__subhead"><img class="skill__icon" src="img/icons/icon_desktop.svg">Graphic</h3>
 
@@ -256,10 +334,10 @@
     <section id="contact" name="contact">
       <a class="cta contact__cta" href="tel:9782890008">Call</a>
       <a class="cta contact__cta" href="mailto:gigs@nikomatses.com">Email</a>
-      <span class="copyright">&copy;2017 Niko Matses /  978.289.0008 / gigs@nikomatses.com</span>
+      <span class="copyright">&copy;2020 Niko Matses /  978.289.0008 / gigs@nikomatses.com</span>
     </section>
     <ul class="social">
-      <li class="social__icon"><a class="icon-instagram" target="_blank" href="https://www.instagram.com/nik0media">
+      <li class="social__icon"><a class="icon-instagram" target="_blank" href="https://www.instagram.com/niko.media">
 									<img src="img/icons/icon-instagram.svg" alt="Instagram">
 							</a></li>
       <li class="social__icon"><a class="icon-twitter" target="_blank" href="https://twitter.com/nik0media">
@@ -283,14 +361,6 @@
   <script type="text/javascript" src="js/animate.js"></script>
   <script src="js/modernizr.js"></script>
   <script src="js/main.js"></script>
-  <script src='js/jquery.zoom.js'></script>
-  <script>
-    $(document).ready(function() {
-      $('.zoom').zoom({
-        on: 'click'
-      });
-    });
-  </script>
 </body>
 
 </html>

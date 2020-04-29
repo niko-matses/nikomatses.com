@@ -1083,3 +1083,160 @@ body {
 .icon-instagram:hover:before {
   content: 'Instagram';
 }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__content {
+  display: inline-block;
+}
+
+.nav__menu {
+  display: none;
+  margin: 15px 0;
+}
+.nav__menu-items {
+}
+.nav__menu-item {
+  text-transform: uppercase;
+  letter-spacing: 0;  
+}
+.nav__link .letter {
+  letter-spacing: 2px;
+}
+.nav__link {
+  padding: 12px;
+  color: rgba(255,255,255,.8);
+  font-size: 14px;
+}
+.nav__link:hover {
+  color: rgba(255,255,255,1);
+}
+.hero {
+  height: 80vh;
+}
+.main-content {
+  padding: 100px 30px;
+  text-align: left;
+  padding-left: 15px;
+}
+.project__card, .project__background,.project__details {
+  border-radius: 4px;
+}
+.project__card {
+  text-align: right;
+  margin: 3vh auto;
+  width: 90%;
+}
+.project__cta {
+    background: rgba(255,255,255,0.15);
+    background-color: #39af84;
+    text-align: center;
+}
+.project__link {
+  color: #fff !important ;
+  text-shadow: #888 0px 1px 5px;
+  font-size: 14px !important;
+}
+.project__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative ;
+    text-align: left;
+    padding: 45px;
+    width: 90%;
+    margin: 30px auto;
+    background: rgba(255,255,255,.9);
+ }
+
+}
+.hero {
+  height: 85vh;
+}
+.project__background {
+  position: relative;
+  top: 0;
+  min-height: 600px;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+@media (min-height: 768px) and (max-width: 999px) {
+  .project__background {
+      height: 65vh;
+    }
+}
+@media (max-width: 999px) {
+  .main-content {
+      padding: 100px 0;
+  }
+  .project__details {
+      padding: 30px 15px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .project__background {
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav__menu {
+    display: flex;
+  }
+  .project__card {
+    margin: 0 auto 15vh;
+  }
+  .project__details {
+    border-radius: 0;
+    width: 30%;
+    margin: 0 0 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+.nav__link {
+  padding: 15px;
+  font-size: 16px;
+}
+  .project__background {
+  background-position: bottom left
+  }
+  .project__details {
+    border-radius: 4px;
+    align-self: center;
+    box-shadow: rgba(0,0,0,.15) 0px 0px 15px;
+    right: 2.5%;
+    width: 30%;
+  }
+ 
+}
+@media (min-width: 1800px) {
+  .project__card {
+    width: 75%;
+  }
+  .project__details {
+    position: absolute;
+    width: 25%;
+    top: unset;
+    bottom: 60px;
+    padding: 30px;
+  }
+  .project__background {
+    min-height: 75vh;
+  }
+  .project__description {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 2200px) {
+    .project__background {
+      background-size: 1600px;
+    }
+  }
