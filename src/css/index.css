@@ -1240,3 +1240,43 @@ body {
       background-size: 1600px;
     }
   }
+
+.section__snapshot{
+    margin: 20vh auto;
+  }
+.section__snapshot .main-content__lead-paragraph {
+    font-size: 36px;
+  }
+  .testimonial__quote {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 1px;
+  }
+  .testimonial__author-name,
+  .testimonial__author-role {
+    padding: 0;
+  }
+  .testimonial__author-name  {
+    margin: 1em 0 0;
+  }
+  .testimonial__author-role {
+    margin: 0 0 .5em ;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #39af84;
+    letter-spacing: 1px;
+  }
+  .testimonial .skill__icon {
+    float: left;
+    margin: 1.1em 1em 4em 0;
+  }
+  @media (min-width: 768px) {
+    .testimonial:last-child {
+      width: 66% !important;
+    }
+  }
+  .copyright {
+    font-size: 18px;
+    line-height: 1.5;
+  }  
