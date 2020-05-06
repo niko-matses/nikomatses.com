@@ -923,7 +923,6 @@ body {
   color: #f9f9f9;
   font-size: 2.5em;
   line-height: 0;
-  content: '\261B \FE0E';
 }
 /* line 103, ../sass/components/_projects.scss */
 .project__cta:hover {
