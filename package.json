@@ -13,7 +13,7 @@
 		"url": "http://github.com/cferdinandi/Plugin"
 	},
 	"devDependencies": {
-		"gulp": "^3.9.1",
+		"gulp": "^4.0.2",
 		"node-fs": "^0.1.7",
 		"del": "^2.2.2",
 		"lazypipe": "^1.0.1",
